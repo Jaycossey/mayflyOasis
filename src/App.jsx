@@ -1,33 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Gallery from './components/Gallery';
+import artists from './components/Artists';
+import About from './components/About';
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const randomNumber = Math.floor(Math.random() * 100); // will generate a random number between 0 and 100, WILL NEED TO BE EDITED this is not the final function
+  const [randomArtist, setRandomArtist] = useState(artists[0]); // need to set artists array to store data, use randomNumber to assign new artists randomly
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <Router>
+        {/* @arionitas create navbar component here */}
+        <Routes>
+          {/* This is where our paths will be for the components, all of our remaining components will be rendered here, unless they are
+              children of the section/page */}
+          <Route path='/Gallery' element={<Gallery artistPreview={randomArtist} />} />
+          <Route path='/' element={<About />} />
+        </Routes>
+      </Router>
     </>
   )
 }

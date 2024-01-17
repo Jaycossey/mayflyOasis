@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import LoadingScreen from './components/LoadingScreen'
 import Navbar from './components/Navbar'
+import LandingGallery from './components/landingGallery'
 import './App.css'
 
 
@@ -14,9 +15,12 @@ function App(){
 
   return (
     <Router>
+      <Navbar key="navbar" />
+
       <Routes>
-        <Route path="/" element={[<LoadingScreen key="loading" onFinished={handleLoadingFinished} />, <Navbar key="navbar" />]} />
+        <Route path="/" element={<LoadingScreen key="loading" onFinished={handleLoadingFinished} />} />
         {/* other components */}
+        <Route path="/*" element={<LandingGallery />} />
       </Routes>
     </Router>
   )

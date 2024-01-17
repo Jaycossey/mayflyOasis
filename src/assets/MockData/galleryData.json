@@ -1,0 +1,32 @@
+[
+  {
+    "id": "artwork-1",
+    "title": "London Skyline",
+    "artist": "Olivia Brown",
+    "image": "./assets/MockData/MockImages/mocki1.jpg",
+    "description": "A vibrant depiction of the London skyline in watercolor.",
+    "year": 2021,
+    "medium": "Watercolor on Canvas",
+    "dimensions": "60x40 cm"
+  },
+  {
+    "id": "artwork-2",
+    "title": "The Highlands",
+    "artist": "Ethan Taylor",
+    "image": "./assets/MockData/MockImages/mocki2.jpg",
+    "description": "A dramatic sculpture representing the Scottish Highlands.",
+    "year": 2020,
+    "medium": "Bronze Sculpture",
+    "dimensions": "80x60x50 cm"
+  },
+  {
+    "id": "artwork-3",
+    "title": "Cardiff Bay at Dusk",
+    "artist": "Amelia Johnson",
+    "image": "./assets/MockData/MockImages/mocki3.jpg",
+    "description": "Black and white photography capturing Cardiff Bay at sunset.",
+    "year": 2022,
+    "medium": "Photography",
+    "dimensions": "Print available in various sizes"
+  }
+]

@@ -1,41 +1,23 @@
-{
-  "artist": {
-    "name": "Alex Smith",
-    "bio": "Alex Smith is a contemporary artist known for vibrant paintings and sculptures. Based in New York, Alex's work explores the relationship between urban life and nature.",
-    "profilePicture": "url-to-artist-profile-picture.jpg",
-    "contact": {
-      "email": "alexsmith@example.com",
-      "phone": "+123456789",
-      "socialMedia": {
-        "instagram": "@alexsmithart",
-        "twitter": "@alexsmithart"
-      }
-    }
+[
+  {
+    "id": 1,
+    "name": "Olivia Brown",
+    "image": "../assets/images/mockp1.jpg",
+    "occupation": "Painter",
+    "location": "London, UK"
   },
-  "artworks": [
-    {
-      "id": "artwork-1",
-      "title": "Urban Harmony",
-      "description": "A mixed media painting capturing the essence of city life.",
-      "imageUrl": "url-to-image-1.jpg",
-      "price": 500,
-      "dimensions": {
-        "width": 60,
-        "height": 40
-      },
-      "medium": "Mixed Media"
-    },
-    {
-      "id": "artwork-2",
-      "title": "Nature's Embrace",
-      "description": "An abstract representation of the natural world.",
-      "imageUrl": "url-to-image-2.jpg",
-      "price": 750,
-      "dimensions": {
-        "width": 50,
-        "height": 50
-      },
-      "medium": "Oil on Canvas"
-    }
-  ]
-}
+  {
+    "id": 2,
+    "name": "Ethan Taylor",
+    "image": "../assets/images/mockp2.jpg",
+    "occupation": "Sculptor",
+    "location": "Edinburgh, Scotland"
+  },
+  {
+    "id": 3,
+    "name": "Amelia Johnson",
+    "image": "../assets/images/mockp3.jpg",
+    "occupation": "Photographer",
+    "location": "Cardiff, Wales"
+  }
+]

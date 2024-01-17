@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Navbar from './Navbar' // Import the Navbar component
+import Navbar from './Navbar' 
 import Logo from '../assets/logos/mfo-logo-icon.svg'
 
 

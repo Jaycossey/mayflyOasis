@@ -1,7 +1,9 @@
 const LandingGallery = () => {
     return (
         <>
-            <div className="h-screen w-screen bg-cyan-500"></div>
+            <div className="w-screen h-screen bg-cyan-500"></div>
+            
+        
         </>
     );
 }

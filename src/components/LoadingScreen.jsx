@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import Navbar from './Navbar' 
+import { useState, useEffect } from 'react'
 import Logo from '../assets/logos/mfo-logo-icon.svg'
-
+import Home from './Home'
 
 const LoadingScreen = () => {
   const [loading, setLoading] = useState(true)
@@ -15,7 +14,7 @@ const LoadingScreen = () => {
   }, [])
 
   return (
-    <div className={`relative loading-screen ${loading ? 'h-screen overflow-hidden' : 'h-screen'}`}>
+    <div className={`relative ${loading ? 'h-screen overflow-hidden' : 'h-screen'}`} style={{ backgroundColor: 'transparent' }}>
       {loading && (
         <div className="absolute inset-0 flex justify-center loading-content">
           <div className="logo-container">
@@ -23,7 +22,7 @@ const LoadingScreen = () => {
           </div>
         </div>
       )}
-      {!loading && <Navbar />}
+      {!loading && <Home />}
     </div>
   )
 }

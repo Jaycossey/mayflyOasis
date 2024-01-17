@@ -1,4 +1,4 @@
-/*import SpotlightData from './SpotlightData';
+import SpotlightData from './SpotlightData';
 import Button from './Button';
 import artistArray from '../assets/MockData/ArtistArray';
 

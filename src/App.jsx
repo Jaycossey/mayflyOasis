@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import LoadingScreen from './components/LoadingScreen'
 import Navbar from './components/Navbar'
-//import LandingGallery from './components/landingGallery'
+import LandingGallery from './components/landingGallery'
 import Home from './components/Home'
 import './App.css'
 

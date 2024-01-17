@@ -1,16 +1,21 @@
 import SpotlightData from './SpotlightData';
 import Button from './Button';
+import artistArray from '../assets/MockData/ArtistArray';
 
 // Spotlight gallery for home page
 const LandingGallery = () => {
+
+    // 
+    const artist = artistArray[0];
+
     return (
         // Container for gallery
         <div id="homeGalleryContainer" 
             className="bg-white 
                         p-20
                         grid
-                        grid-cols-3
-                        grid-rows-3
+                        grid-cols-5
+                        grid-rows-5
                         m-auto
                         border-2
                         border-red-500">
@@ -22,9 +27,9 @@ const LandingGallery = () => {
             <div id="contentContainer"
                 className="border-4
                             row-start-1
-                            row-span-3
-                            col-span-1">
-                <SpotlightData />
+                            row-span-5
+                            col-span-3">
+                <SpotlightData artist={artist} />
             </div>
 
             {/* Button to iterate next artist in spotlight */}

@@ -1,9 +1,8 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../assets/logos/mfo-full-logo-nobg.svg' 
 import PropTypes from 'prop-types';
 
-const Navbar = ({ loading}) =>(
+const Navbar = ({ loading }) =>(
   loading ? null:
   <nav className="fixed z-10 flex items-center justify-between w-full h-20 border-2 border-black">
     <div className="flex items-center justify-center w-full max-w-lg mx-auto overflow-hidden lg:w-auto lg:mx-0">
@@ -11,7 +10,7 @@ const Navbar = ({ loading}) =>(
       <span className="hidden text-xl font-semibold tracking-tight lg:block"></span>
     </div>
     <div className="flex items-center justify-center w-full max-w-xs mx-auto lg:w-auto lg:mx-0 lg:justify-end">
-      <NavLink to="/" className="px-6 py-2 text-black rounded lg:mx-2 lg:my-0">Home</NavLink>
+      <NavLink to="/Home" className="px-6 py-2 text-black rounded lg:mx-2 lg:my-0">Home</NavLink>
       <NavLink to="/about" className="px-6 py-2 text-black rounded lg:mx-2 lg:my-0">About</NavLink>
       <NavLink to="/contact" className="px-6 py-2 text-black rounded lg:mx-2 lg:my-0">Contact</NavLink>
     </div>

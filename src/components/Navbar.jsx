@@ -1,9 +1,8 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../assets/logos/mfo-full-logo-nobg.svg' 
 import PropTypes from 'prop-types';
 
-const Navbar = ({ loading}) =>(
+const Navbar = ({ loading }) =>(
   loading ? null:
   <nav className="fixed z-10 flex items-center justify-between w-full h-20 border-2 border-black">
     <div className="flex items-center justify-center w-full max-w-lg mx-auto overflow-hidden lg:w-auto lg:mx-0">

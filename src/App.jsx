@@ -19,8 +19,8 @@ function App(){
 
       <Routes>
         <Route path="/" element={<LoadingScreen key="loading" onFinished={handleLoadingFinished} />} />
+        <Route path="/Home" element={<LandingGallery />} />
         {/* other components */}
-        <Route path="/*" element={<LandingGallery />} />
       </Routes>
     </Router>
   )

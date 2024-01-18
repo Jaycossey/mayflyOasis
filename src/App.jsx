@@ -5,7 +5,6 @@ import Navbar from './components/Navbar'
 import LandingGallery from './components/landingGallery'
 import './App.css'
 
-
 function App(){
   const [loading, setLoading] = useState(true);
 

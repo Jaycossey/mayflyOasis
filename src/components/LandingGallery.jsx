@@ -5,7 +5,7 @@ import artistArray from '../assets/MockData/ArtistArray';
 // Spotlight gallery for home page
 const LandingGallery = () => {
 
-    // 
+    // current artist for testing
     const artist = artistArray[0];
 
     return (
@@ -25,10 +25,10 @@ const LandingGallery = () => {
 
             {/* Container for artist spotlight information */}
             <div id="contentContainer"
-                className="border-4
-                            row-start-1
+                className="row-start-1
                             row-span-5
-                            col-span-3">
+                            col-span-3
+                            pt-2">
                 <SpotlightData artist={artist} />
             </div>
 

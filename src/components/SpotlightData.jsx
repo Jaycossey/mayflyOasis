@@ -1,8 +1,11 @@
+// Spotlight component for landing / home page
 const SpotlightData = (props) => {
+    // copy of artist passed through props
     const artistCopy = props.artist;
-    console.log(artistCopy);
+
     return (
         <>
+            {/* Image of artists work */}
             <img src={artistCopy.artworks[0].imageUrl} 
                 alt={artistCopy.artworks[0].title}
                 className="border-2
@@ -13,12 +16,14 @@ const SpotlightData = (props) => {
                         m-auto
                         p-2" />
             
+            {/* Artist name and title of work */}
             <p className="text-right
                         mr-6
                         mt-2">
                 {artistCopy.artist.name} - {artistCopy.artworks[0].title} 
             </p>
 
+            {/* Short description of artists work */}
             <p className="text-center
                         border-2
                         rounded-md

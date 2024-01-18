@@ -10,15 +10,19 @@ const About = () => {
                   flex 
                   flex-col
                   w-screen 
-                  m-20 
+                  mt-16
                   absolute
                   p-20
-                  gap-10 overflow-auto">
+                  gap-10 
+                  overflow-auto
+                  bg-white">
 
       {/* About us title */}
       <p className="mb-4 
                   text-4xl 
-                  font-semibold">
+                  font-semibold 
+                  underline 
+                  underline-offset-4">
               Hello Mayflies!
       </p>
 

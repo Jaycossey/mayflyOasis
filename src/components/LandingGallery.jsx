@@ -17,8 +17,7 @@ const LandingGallery = () => {
                         grid-cols-5
                         grid-rows-5
                         m-auto
-                        border-2
-                        border-red-500">
+                        border-2">
             
             {/* Button to iterate previous artist in spotlight */}
             <Button direction={"\<"} />

@@ -8,3 +8,10 @@ html, body {
 body::-webkit-scrollbar {
   display: none;  /* for Chrome, Safari, and Opera */
 }
+
+
+/* About Section Styling */
+
+.altBg:nth-child(2n) {
+  background-color: gray;
+}

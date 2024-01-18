@@ -25,7 +25,9 @@ const SpotlightData = (props) => {
                         bg-slate-200
                         shadow-lg
                         shadow-slate-400
-                        mt-4">
+                        mt-4
+                        p-2
+                        ">
                 {artistCopy.artworks[0].description}
             </p>
         </>

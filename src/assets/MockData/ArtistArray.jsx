@@ -39,7 +39,7 @@ const artistArray = [
             medium: "Oil on Canvas"
             }
         ]
-    }
+    },
 ];
 
 export default artistArray;

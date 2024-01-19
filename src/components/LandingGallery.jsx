@@ -11,24 +11,14 @@ const LandingGallery = () => {
     return (
         // Container for gallery
         <div id="homeGalleryContainer" 
-            className="bg-white 
-                        p-20
-                        grid
-                        grid-cols-5
-                        grid-rows-5
-                        m-auto
-                        border-2
-                        border-red-500">
+            className="grid grid-cols-5 grid-rows-5 p-20 m-auto bg-transparent border-2 border-red-500">
             
             {/* Button to iterate previous artist in spotlight */}
             <Button direction={"\<"} />
 
             {/* Container for artist spotlight information */}
             <div id="contentContainer"
-                className="border-4
-                            row-start-1
-                            row-span-5
-                            col-span-3">
+                className="col-span-3 row-span-5 row-start-1 bg-white border-4">
                 <SpotlightData artist={artist} />
             </div>
 

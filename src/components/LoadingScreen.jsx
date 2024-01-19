@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import Navbar from './Navbar' 
+import { useState, useEffect } from 'react'
 import Logo from '../assets/logos/mfo-logo-icon.svg'
+import LandingGallery from './landingGallery'
 
 
 const LoadingScreen = () => {
@@ -23,9 +23,9 @@ const LoadingScreen = () => {
           </div>
         </div>
       )}
-      {!loading && <Navbar />}
+      {!loading && <LandingGallery />}
     </div>
   )
 }
 
-export default LoadingScreen
+export default LoadingScreen;

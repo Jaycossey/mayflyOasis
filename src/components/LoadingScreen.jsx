@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Logo from '../assets/logos/mfo-logo-icon.svg'
-import LandingGallery from './landingGallery'
+import LandingGallery from './LandingGallery'
 
 
 const LoadingScreen = () => {

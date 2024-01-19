@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbar';
-import LandingGallery from './components/landingGallery';
+import LandingGallery from './components/LandingGallery';
 import './App.css';
 
 function App() {
@@ -14,16 +14,11 @@ function App() {
 
   return (
     <Router>
-      <Navbar key='navbar' />
+      <Navbar key="navbar" loading={false} />
 
       <Routes>
-        <Route
-          path='/'
-          element={
-            <LoadingScreen key='loading' onFinished={handleLoadingFinished} />
-          }
-        />
-        <Route path='/Home' element={<LandingGallery />} />
+        <Route path="/" element={<LoadingScreen key="loading" onFinished={handleLoadingFinished} loading={loading} />} />
+        <Route path="/Home" element={<LandingGallery />} />
         {/* other components */}
       </Routes>
     </Router>

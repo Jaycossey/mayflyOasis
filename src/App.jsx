@@ -6,16 +6,16 @@ import LandingGallery from './components/landingGallery'
 import About from './components/About'
 import './App.css'
 
-function App(){
+function App() {
   const [loading, setLoading] = useState(true);
 
   const handleLoadingFinished = () => {
-    setLoading(false)
-  }
+    setLoading(false);
+  };
 
   return (
     <Router>
-      <Navbar key="navbar" />
+      <Navbar key='navbar' />
 
       <Routes>
         <Route path="/" element={<LoadingScreen key="loading" onFinished={handleLoadingFinished} />} />
@@ -24,8 +24,7 @@ function App(){
         {/* other components */}
       </Routes>
     </Router>
-  )
+  );
 }
-
 
 export default App;

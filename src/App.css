@@ -5,6 +5,11 @@ html, body {
   scrollbar-width: none;  /* for Firefox */
 }
 
+body {
+  background-image: url("./assets/background/vectors/t9.svg");
+  background-size: cover;
+}
+
 body::-webkit-scrollbar {
   display: none;  /* for Chrome, Safari, and Opera */
 }
@@ -14,4 +19,9 @@ body::-webkit-scrollbar {
 
 .altBg:nth-child(2n) {
   background-color: gray;
+}
+
+nav {
+  background-image: url('./assets/background/vectors/t9.svg');
+  background-size: cover;
 }

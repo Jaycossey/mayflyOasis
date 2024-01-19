@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar key='navbar' />
+      <Navbar key="navbar" loading={false} />
 
       <Routes>
         <Route path="/" element={<LoadingScreen key="loading" onFinished={handleLoadingFinished} />} />

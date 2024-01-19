@@ -1,41 +1,72 @@
-{
-  "artist": {
-    "name": "Alex Smith",
-    "bio": "Alex Smith is a contemporary artist known for vibrant paintings and sculptures. Based in New York, Alex's work explores the relationship between urban life and nature.",
-    "profilePicture": "url-to-artist-profile-picture.jpg",
-    "contact": {
-      "email": "alexsmith@example.com",
-      "phone": "+123456789",
-      "socialMedia": {
-        "instagram": "@alexsmithart",
-        "twitter": "@alexsmithart"
-      }
-    }
+[
+  {
+    "id": 1,
+    "name": "Olivia Brown",
+    "image": "./assets/MockData/MockImages/profile1.jpg",
+    "occupation": "Painter",
+    "location": "London, UK"
   },
-  "artworks": [
-    {
-      "id": "artwork-1",
-      "title": "Urban Harmony",
-      "description": "A mixed media painting capturing the essence of city life.",
-      "imageUrl": "url-to-image-1.jpg",
-      "price": 500,
-      "dimensions": {
-        "width": 60,
-        "height": 40
-      },
-      "medium": "Mixed Media"
-    },
-    {
-      "id": "artwork-2",
-      "title": "Nature's Embrace",
-      "description": "An abstract representation of the natural world.",
-      "imageUrl": "url-to-image-2.jpg",
-      "price": 750,
-      "dimensions": {
-        "width": 50,
-        "height": 50
-      },
-      "medium": "Oil on Canvas"
-    }
-  ]
-}
+  {
+    "id": 2,
+    "name": "Ethan Taylor",
+    "image": "./assets/MockData/MockImages/profile2.jpg",
+    "occupation": "Sculptor",
+    "location": "Edinburgh, Scotland"
+  },
+  {
+    "id": 3,
+    "name": "Amelia Johnson",
+    "image": "./assets/MockData/MockImages/profile3.jpg",
+    "occupation": "Photographer",
+    "location": "Cardiff, Wales"
+  },
+  {
+    "id": 4,
+    "name": "James Wilson",
+    "image": "./assets/MockData/MockImages/profile4.jpg",
+    "occupation": "Digital Artist",
+    "location": "Manchester, UK"
+  },
+  {
+    "id": 5,
+    "name": "Sophie Green",
+    "image": "./assets/MockData/MockImages/profile5.jpg",
+    "occupation": "Ceramicist",
+    "location": "Bristol, UK"
+  },
+  {
+    "id": 6,
+    "name": "Harry Davis",
+    "image": "./assets/MockData/MockImages/profile6.jpg",
+    "occupation": "Printmaker",
+    "location": "Birmingham, UK"
+  },
+  {
+    "id": 7,
+    "name": "Isabella Morris",
+    "image": "./assets/MockData/MockImages/profile7.jpg",
+    "occupation": "Textile Artist",
+    "location": "Glasgow, Scotland"
+  },
+  {
+    "id": 8,
+    "name": "Charlotte Young",
+    "image": "./assets/MockData/MockImages/profile8.jpg",
+    "occupation": "Illustrator",
+    "location": "Belfast, Northern Ireland"
+  },
+  {
+    "id": 9,
+    "name": "Jack Thompson",
+    "image": "./assets/MockData/MockImages/profile9.jpg",
+    "occupation": "Graphic Designer",
+    "location": "Liverpool, UK"
+  },
+  {
+    "id": 10,
+    "name": "Grace Williams",
+    "image": "./assets/MockData/MockImages/profile10.jpg",
+    "occupation": "Fashion Designer",
+    "location": "Brighton, UK"
+  }
+]

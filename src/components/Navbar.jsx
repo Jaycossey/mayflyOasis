@@ -33,6 +33,12 @@ const Navbar = ({ loading }) => {
           Contact
         </NavLink>
         <NavLink
+          to='/ArtistList'
+          className='px-16 rounded py-26text-black lg:mx-2 lg:my-0'
+        >
+          Artist
+        </NavLink>
+        <NavLink
           to='/shop'
           className='px-16 rounded py-26text-black lg:mx-2 lg:my-0'
         >

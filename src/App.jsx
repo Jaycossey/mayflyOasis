@@ -7,6 +7,8 @@ import Cart from './Pages/Cart/Cart';
 import Shop from './Pages/Shop/Shop';
 import Checkout from './components/Checkout';
 import { CartProvider } from 'react-use-cart';
+import ArtistList from './Pages/Artist/ArtistList'; // Import the TeamPage component
+import ArtistProfile from './Pages/Artist/ArtistProfile'; // Import the ArtistProfile component
 
 import './App.css';
 
@@ -36,9 +38,10 @@ function App() {
           <Route path='/Shop' element={<Shop />} />
           <Route path='/Cart' element={<Cart />} />
           <Route path='/Checkout' element={<Checkout />} />
-          {/* other components */}
+          <Route path='/ArtistList' element={<ArtistList />} />
+          <Route path='/artist/:id' element={<ArtistProfile />} />
         </Routes>
-      </Router>{' '}
+      </Router>
     </CartProvider>
   );
 }

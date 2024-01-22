@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbar';
 import LandingGallery from './components/LandingGallery';
+import Cart from './Pages/Cart/Cart';
+import Shop from './Pages/Shop/Shop';
+
 import './App.css';
 
 function App() {
@@ -14,11 +17,21 @@ function App() {
 
   return (
     <Router>
-      <Navbar key="navbar" loading={false} />
-
+      <Navbar key='navbar' loading={false} />
       <Routes>
-        <Route path="/" element={<LoadingScreen key="loading" onFinished={handleLoadingFinished} loading={loading} />} />
-        <Route path="/Home" element={<LandingGallery />} />
+        <Route
+          path='/'
+          element={
+            <LoadingScreen
+              key='loading'
+              onFinished={handleLoadingFinished}
+              loading={loading}
+            />
+          }
+        />
+        <Route path='/Home' element={<LandingGallery />} />
+        <Route path='/Shop' element={<Shop />} />
+        <Route path='/Cart' element={<Cart />} />
         {/* other components */}
       </Routes>
     </Router>

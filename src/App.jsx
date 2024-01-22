@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import LandingGallery from './components/LandingGallery';
 import Cart from './Pages/Cart/Cart';
 import Shop from './Pages/Shop/Shop';
+import Checkout from './components/Checkout';
+import { CartProvider } from 'react-use-cart';
 
 import './App.css';
 
@@ -16,25 +18,28 @@ function App() {
   };
 
   return (
-    <Router>
-      <Navbar key='navbar' loading={false} />
-      <Routes>
-        <Route
-          path='/'
-          element={
-            <LoadingScreen
-              key='loading'
-              onFinished={handleLoadingFinished}
-              loading={loading}
-            />
-          }
-        />
-        <Route path='/Home' element={<LandingGallery />} />
-        <Route path='/Shop' element={<Shop />} />
-        <Route path='/Cart' element={<Cart />} />
-        {/* other components */}
-      </Routes>
-    </Router>
+    <CartProvider>
+      <Router>
+        <Navbar key='navbar' loading={false} />
+        <Routes>
+          <Route
+            path='/'
+            element={
+              <LoadingScreen
+                key='loading'
+                onFinished={handleLoadingFinished}
+                loading={loading}
+              />
+            }
+          />
+          <Route path='/Home' element={<LandingGallery />} />
+          <Route path='/Shop' element={<Shop />} />
+          <Route path='/Cart' element={<Cart />} />
+          <Route path='/Checkout' element={<Checkout />} />
+          {/* other components */}
+        </Routes>
+      </Router>{' '}
+    </CartProvider>
   );
 }
 

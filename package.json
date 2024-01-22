@@ -28,6 +28,7 @@
     "react-move": "^6.5.0",
     "react-parallax-tilt": "^1.7.191",
     "react-router-dom": "^6.21.2",
+    "react-use-cart": "^1.13.0",
     "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {

@@ -28,7 +28,7 @@ const Product = (props) => {
         <p className='text-sm text-gray-600'>
           {year}, {medium}, {dimensions}
         </p>
-        <p className='text-lg font-bold my-2'>{price}</p>
+        <p className='text-lg font-bold my-2'>£{price}</p>
         <button
           onClick={handleAddToCart}
           className='AddToCartButton bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300 ease-in-out'

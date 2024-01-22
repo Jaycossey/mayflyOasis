@@ -1,6 +1,4 @@
-import React from 'react';
-import './Checkout.css'; // Importing the CSS file
-
+import './Checkout.css';
 const Checkout = () => {
   const handleSubmit = (e) => {
     e.preventDefault();

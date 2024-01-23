@@ -1,5 +1,5 @@
 import { useCart } from 'react-use-cart';
-import './Cart.css';
+import './cart.css';
 import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {

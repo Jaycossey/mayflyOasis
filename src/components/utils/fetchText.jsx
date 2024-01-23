@@ -4,6 +4,7 @@ const fetchText = (path) => {
     fetch(path)
         .then((res) => res.text())
         .then((text) => {
+            console.log(text);
             return text;
         })
         .catch((err) => console.error(err));

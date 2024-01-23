@@ -5,9 +5,11 @@ import teamArray from "./aboutSection/teamMemberArray";
 
 // About MayflyOasis
 const About = () => {
+  // async await || promises, might be worth checking them out asap, be a good challenge, will read up tonight and go from there.
   const welcome = fetchText('src/assets/textFiles/aboutWelcome.txt');
   const mission = fetchText('src/assets/textFiles/mission.txt');
   const vision = fetchText('src/assets/textFiles/vision.txt');
+  console.log(welcome, mission, vision);
   return (
     // Container for about section -- updated to fixed position to allow for navbar separation
     <div className="text-gray-800 

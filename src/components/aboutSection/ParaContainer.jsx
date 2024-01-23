@@ -1,8 +1,9 @@
 const ParaContainer = (props) => {
+    console.log(props);
     return (
         <p className="mb-4 
                     text-lg
-                    h-80
+                    h-full
                     altBg
                     m-auto
                     w-10/12

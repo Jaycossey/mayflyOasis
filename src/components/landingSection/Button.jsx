@@ -2,10 +2,10 @@
 const Button = (props) => {
     const handleClick = () => {
         if (props.direction === "\<") {
-            console.log("LeftClick");
+            // console.log("LeftClick");
             return "previousClick";
         } else {
-            console.log("RightClick");
+            // console.log("RightClick");
             return "nextClick";
         }
     }

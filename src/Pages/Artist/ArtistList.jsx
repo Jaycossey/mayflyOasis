@@ -1,22 +1,21 @@
-import { Link } from 'react-router-dom';
-import ARTISTPROFILE from '../../assets/MockData/artistData';
-import './ArtistList.css';
+import { Link } from 'react-router-dom'
+import ARTISTPROFILE from '../../assets/MockData/artistData'
+import './ArtistList.css'
 
 const ArtistList = () => {
   return (
-    <div>
-      <h1>Meet Our Artists</h1>
-      <div className='artist-grid mt-20 p-10'>
+    <div className='container'>
+      <div className='header-container'>
+        <h1>.</h1>
+      </div>
+      <div className='artist-grid mt-10 p-10'>
         {ARTISTPROFILE.map((artist) => (
           <div className='artist-card' key={artist.id}>
-            <img
-              src={artist.image}
-              alt={artist.name}
-              className='artist-image'
-            />
+            <img src={artist.image} alt={artist.name} className='artist-image' />
             <div className='description p-4'>
               <h2 className='text-sm font-semibold'>{artist.name}</h2>
-              <p className='text-md text-gray-500'>{artist.occupation}</p>
+              <p className='text-xs text-gray-500'>{artist.occupation}</p>
+
               <Link to={`/artist/${artist.id}`} className='ViewProfileButton'>
                 View Profile
               </Link>
@@ -25,7 +24,7 @@ const ArtistList = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ArtistList;
+export default ArtistList

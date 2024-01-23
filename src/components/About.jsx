@@ -1,7 +1,11 @@
 import ParaContainer from "./aboutSection/ParaContainer";
+import fetchText from "./utils/fetchText";
 
 // About MayflyOasis
 const About = () => {
+  const welcome = fetchText('src/assets/textFiles/aboutWelcome.txt');
+  const mission = fetchText('src/assets/textFiles/mission.txt');
+  const vision = fetchText('src/assets/textFiles/vision.txt');
   return (
     // Container for about section -- updated to fixed position to allow for navbar separation
     <div className="text-gray-800 
@@ -27,9 +31,9 @@ const About = () => {
       </p>
 
       {/* Text containers, takes text values as props */}
-      <ParaContainer text={"Welcome"} />
-      <ParaContainer text={"About"} />
-      <ParaContainer text={"Our Mission"} />
+      <ParaContainer text={welcome} />
+      <ParaContainer text={mission} />
+      <ParaContainer text={vision} />
       
     </div>
   )

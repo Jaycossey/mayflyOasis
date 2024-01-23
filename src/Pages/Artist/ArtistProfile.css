@@ -1,0 +1,18 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  justify-content: center;
+}
+.profile-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

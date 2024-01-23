@@ -17,7 +17,10 @@ const Cart = () => {
                     w-full
                     p-10
                     left-0
-                    right-10'>
+                    right-10
+                    border-8
+                    border-black
+                    border-opacity-20'>
       <h2>Cart</h2>
       {items.map((item) => (
         <div key={item.id} className='cart-item'>

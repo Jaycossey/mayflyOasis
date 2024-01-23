@@ -1,5 +1,7 @@
 import ParaContainer from "./aboutSection/ParaContainer";
 import fetchText from "./utils/fetchText";
+import Team from "./aboutSection/Team";
+import teamArray from "./aboutSection/teamMemberArray";
 
 // About MayflyOasis
 const About = () => {
@@ -16,7 +18,7 @@ const About = () => {
                   w-screen 
                   mt-16
                   absolute
-                  p-20
+                  p-10
                   gap-10 
                   overflow-auto
                   bg-white">
@@ -34,6 +36,12 @@ const About = () => {
       <ParaContainer text={welcome} />
       <ParaContainer text={mission} />
       <ParaContainer text={vision} />
+
+      <div className="flex flex-wrap items-center justify-center gap-10">
+        {teamArray.map((staff) => {
+          return <Team name={staff.name} job={staff.job} quote={staff.quote} image={staff.image} />
+        })}
+      </div>
       
     </div>
   )

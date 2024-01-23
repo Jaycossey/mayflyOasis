@@ -5,6 +5,16 @@ html, body {
   scrollbar-width: none;  /* for Firefox */
 }
 
+body {
+  background-image: url("./assets/background/vectors/t9.svg");
+  background-size: cover;
+}
+
 body::-webkit-scrollbar {
   display: none;  /* for Chrome, Safari, and Opera */
+}
+
+nav {
+  background-image: url('./assets/background/vectors/t9.svg');
+  background-size: cover;
 }

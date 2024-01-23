@@ -1,5 +1,5 @@
 import { useCart } from 'react-use-cart';
-import './Cart.css';
+import './cart.css';
 import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
@@ -11,7 +11,15 @@ const Cart = () => {
     navigate('/Checkout');
   };
   return (
-    <div className='cart-container'>
+    <div className='cart-container 
+                    absolute
+                    mt-28
+                    w-full
+                    p-10
+                    left-0
+                    right-10
+                    bg-white
+                    bg-opacity-50'>
       <h2>Cart</h2>
       {items.map((item) => (
         <div key={item.id} className='cart-item'>

@@ -6,7 +6,8 @@ html, body {
 }
 
 body {
-  background-image: url("./assets/background/vectors/t9.svg");
+  background-image: url("./assets/background/vectors/t13.svg");
+  font-family: "catcheye-webfont";
   background-size: cover;
 }
 
@@ -14,7 +15,37 @@ body::-webkit-scrollbar {
   display: none;  /* for Chrome, Safari, and Opera */
 }
 
-nav {
-  background-image: url('./assets/background/vectors/t9.svg');
-  background-size: cover;
+
+/* About Section Styling */
+
+.altBg:nth-child(2n) {
+  background-color: gray;
 }
+
+@font-face {
+  font-family: "catcheye-webfont";
+  src: url('./assets/fonts/Willkids.otf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "catcheye2";
+  src: url('./assets/fonts/TiltPenX.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+nav {
+  font-family: "catcheye-webfont";
+}
+

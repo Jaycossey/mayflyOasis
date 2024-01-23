@@ -6,7 +6,7 @@ const ArtistList = () => {
   return (
     <div>
       <h1>Meet Our Artists</h1>
-      <div className='artist-grid'>
+      <div className='artist-grid mt-20 p-10'>
         {ARTISTPROFILE.map((artist) => (
           <div className='artist-card' key={artist.id}>
             <img
@@ -15,7 +15,7 @@ const ArtistList = () => {
               className='artist-image'
             />
             <div className='description p-4'>
-              <h2 className='text-xl font-semibold'>{artist.name}</h2>
+              <h2 className='text-sm font-semibold'>{artist.name}</h2>
               <p className='text-md text-gray-500'>{artist.occupation}</p>
               <Link to={`/artist/${artist.id}`} className='ViewProfileButton'>
                 View Profile

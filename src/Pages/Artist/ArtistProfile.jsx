@@ -18,7 +18,7 @@ const ArtistProfile = () => {
   const { addItem } = useCart();
 
   return (
-    <div className='content-container'>
+    <div className='content-container p-10 pt-28'>
       <div className='profile-data'>
         <h1>{artist.name}s Profile</h1>
         <img src={artist.image} alt={artist.name} />

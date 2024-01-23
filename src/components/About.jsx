@@ -20,8 +20,7 @@ const About = () => {
                   absolute
                   p-10
                   gap-10 
-                  overflow-auto
-                  bg-white">
+                  overflow-auto">
 
       {/* About us title */}
       <p className="mb-4 
@@ -37,10 +36,17 @@ const About = () => {
       <ParaContainer text={mission} />
       <ParaContainer text={vision} />
 
-      <div className="flex flex-wrap items-center justify-center gap-10">
+      {/* DevTeam member section */}
+      <div className="flex 
+                      flex-wrap 
+                      items-center 
+                      justify-center 
+                      gap-10">
+
         {teamArray.map((staff) => {
           return <Team name={staff.name} job={staff.job} quote={staff.quote} image={staff.image} />
         })}
+
       </div>
       
     </div>

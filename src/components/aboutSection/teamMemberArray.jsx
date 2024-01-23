@@ -3,7 +3,7 @@ const teamArray = [
         name: "Ian",
         job: "Front End Developer",
         quote: "Automate everything",
-        image: "./"
+        image: "src/assets/images/ian.png"
     },
     {
         name: "Husniye",

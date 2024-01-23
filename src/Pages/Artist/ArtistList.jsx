@@ -15,7 +15,7 @@ const ArtistList = () => {
               className='artist-image'
             />
             <div className='description p-4'>
-              <h2 className='text-xl font-semibold'>{artist.name}</h2>
+              <h2 className='text-sm font-semibold'>{artist.name}</h2>
               <p className='text-md text-gray-500'>{artist.occupation}</p>
               <Link to={`/artist/${artist.id}`} className='ViewProfileButton'>
                 View Profile

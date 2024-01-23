@@ -13,6 +13,7 @@ const About = () => {
   return (
     // Container for about section -- updated to fixed position to allow for navbar separation
     <div className="text-gray-800 
+                  text-sm
                   md:p-8 
                   lg:p-16 
                   flex 
@@ -28,8 +29,7 @@ const About = () => {
       <p className="mb-4 
                   text-4xl 
                   font-semibold 
-                  underline 
-                  underline-offset-4">
+                  text-red-500">
               Hello Mayflies!
       </p>
 

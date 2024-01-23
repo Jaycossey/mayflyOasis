@@ -11,7 +11,13 @@ const Cart = () => {
     navigate('/Checkout');
   };
   return (
-    <div className='cart-container'>
+    <div className='cart-container 
+                    absolute
+                    mt-28
+                    w-full
+                    p-10
+                    left-0
+                    right-10'>
       <h2>Cart</h2>
       {items.map((item) => (
         <div key={item.id} className='cart-item'>

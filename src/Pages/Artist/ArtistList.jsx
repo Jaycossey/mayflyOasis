@@ -6,7 +6,7 @@ const ArtistList = () => {
   return (
     <div>
       <h1>Meet Our Artists</h1>
-      <div className='artist-grid'>
+      <div className='artist-grid mt-20 p-10'>
         {ARTISTPROFILE.map((artist) => (
           <div className='artist-card' key={artist.id}>
             <img

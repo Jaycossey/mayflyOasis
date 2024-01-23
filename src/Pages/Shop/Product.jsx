@@ -19,7 +19,7 @@ const Product = (props) => {
   };
 
   return (
-    <div className='product bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out'>
+    <div className='product relative bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out'>
       <img src={image} alt={title} className='w-full h-48 object-cover' />
       <div className='description p-4'>
         <h2 className='text-xl font-semibold'>{title}</h2>

@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import LoadingScreen from './components/LoadingScreen'
 import Navbar from './components/Navbar'
 import './App.css'
+import
 
 
-function App(){
+ function App(){
   const [loading, setLoading] = useState(true);
 
   const handleLoadingFinished = () => {

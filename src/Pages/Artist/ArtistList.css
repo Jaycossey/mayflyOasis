@@ -36,3 +36,6 @@
   margin-top: 10px;
 }
 
+.ViewProfileButton:hover {
+  background-color: gray;
+}

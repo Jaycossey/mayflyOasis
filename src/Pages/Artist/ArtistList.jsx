@@ -14,7 +14,7 @@ const ArtistList = () => {
             <img src={artist.image} alt={artist.name} className='artist-image' />
             <div className='description p-4'>
               <h2 className='text-sm font-semibold'>{artist.name}</h2>
-              <p className='text-xs text-gray-500'>{artist.occupation}</p>
+              <p className='text-xs text-gray-600'>{artist.occupation}</p>
 
               <Link to={`/artist/${artist.id}`} className='ViewProfileButton'>
                 View Profile

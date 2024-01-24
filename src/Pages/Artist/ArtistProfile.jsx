@@ -1,7 +1,11 @@
 import { useParams } from 'react-router-dom';
-import ARTISTPROFILE from '../../assets/MockData/artistData';
 import { useCart } from 'react-use-cart';
+import ARTISTPROFILE from '../../assets/MockData/artistData';
 import PRODUCT_DATA from '../../assets/MockData/Products';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './ArtistProfile.css';
 
 const ArtistProfile = () => {
   const { id } = useParams();
@@ -17,10 +21,46 @@ const ArtistProfile = () => {
 
   const { addItem } = useCart();
 
+  const carouselSettings = {
+    initialSlide: 0,
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: false,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    arrows: true,
+  };
+
+  function PrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: 'block', background: 'grey' }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function NextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: 'block', background: 'grey' }}
+        onClick={onClick}
+      />
+    );
+  }
+
   return (
     <div className='content-container p-10 pt-28'>
-      <div className='profile-data'>
-        <h1>{artist.name}s Profile</h1>
+      <div className='profile-data bg-white'>
+        <h1>{artist.name} Profile</h1>
         <img src={artist.image} alt={artist.name} />
         <p>Occupation: {artist.occupation}</p>
         <p>Location: {artist.location}</p>
@@ -52,24 +92,39 @@ const ArtistProfile = () => {
         </div>
       </div>
 
-      <div className='gallery-data'>
-        {artistArtworks.map((artwork) => (
-          <div key={artwork.id}>
-            <img src={artwork.image} alt={artwork.title} />
-            <h4>{artwork.title}</h4>
-            <p>Description: {artwork.description}</p>
-            <p>Year: {artwork.year}</p>
-            <p>Medium: {artwork.medium}</p>
-            <p>Dimensions: {artwork.dimensions}</p>
-            <p>Price: £{artwork.price}</p>
-            <button
-              onClick={() => addItem(artwork)}
-              className='AddToCartButton bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300 ease-in-out'
-            >
-              Add to Cart
-            </button>
-          </div>
-        ))}
+      <div className='product bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg'>
+        <div className='prodcut-card-container'>
+          {artistArtworks.map((artwork) => (
+            <div key={artwork.id} className='artwork'>
+              <div className='image-carousel'>
+                <Slider {...carouselSettings}>
+                  {artwork.images.map((image, index) => (
+                    <div key={index} className='artwork-image'>
+                      <img
+                        src={image}
+                        alt={`${artwork.title} - Image ${index + 1}`}
+                      />
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+              <div className='description p-4 md:w-1/2 flex flex-col'>
+                <h4>{artwork.title}</h4>
+                <p>Description: {artwork.description}</p>
+                <p>Year: {artwork.year}</p>
+                <p>Medium: {artwork.medium}</p>
+                <p>Dimensions: {artwork.dimensions}</p>
+                <p>Price: £{artwork.price}</p>
+                <button
+                  onClick={() => addItem({ ...artwork, id: artwork.id })}
+                  className='AddToCartButton'
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

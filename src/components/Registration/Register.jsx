@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 // Formik variables
 import { useFormik, Formik, Form } from "formik";
-import { signUpSchema } from "./schema";
+import { signUpSchema } from "./schema/schemaIndex";
 
 export default function Register() {
   const initialValues = useFormik({

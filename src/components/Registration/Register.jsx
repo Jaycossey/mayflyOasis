@@ -41,12 +41,17 @@ p-8 rounded-lg shadow-md">
           {/* -------- FullName --------*/}
           <div className="flex items-center mb-4">
             <FaUser className="mr-2" />
-            FullName
+            <input
+              type="text"
+              className="w-64 p-2 border-b border-gray-500 bg-transparent 
+utline-none placeholder-gray-500"
+              placeholder="Your FullName"
+            />
           </div>
           {/* -------- Email --------*/}
           <div className="flex items-center mb-4">
             <FaEnvelope className="mr-2" />
-            <FaEnvelope className="mr-2" />
+
             <input
               type="email"
               className="w-64 p-2 border-b border-gray-500 bg-transparent 
@@ -103,6 +108,19 @@ outline-none placeholder-gray-500"
               placeholder="Confirm Password"
             />
           </div>
+          {/* -------- Register Button -------- */}
+          <button
+            type="submit"
+            className="bg-black text-white rounded-md py-2 w-64 hover:bg-black-600"
+          >
+            Register
+          </button>
+          <p className="mt-4 text-gray-600">
+            Already have an account at Mayfly Oasis?{" "}
+            <a href="/login" className="text-black-500">
+              Login here
+            </a>
+          </p>
         </form>
       </div>
     </div>

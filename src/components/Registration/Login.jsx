@@ -17,14 +17,14 @@ export default function Login() {
     }
   })
 
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    
-    
-    console.log("Email:", email);
-    console.log("Password:", password);
-  };
+// 
+  // const handleSubmit = (e) => {
+    // e.preventDefault();
+    // 
+    // 
+    // console.log("Email:", email);
+    // console.log("Password:", password);
+  // };
   return (
     <div
       className="flex flex-col items-center justify-center h-screen bg-cover"
@@ -34,7 +34,7 @@ export default function Login() {
         <h2 className="text-3xl text-gray-800 font-semibold mb-6">
           Welcome back to Mayfly Oasis
         </h2>
-        <form className="flex flex-col items-center" onSubmit={formik.handleSubmit}>
+        <form className="flex flex-col items-center" onSubmit={formik}>
           <div className="flex items-center mb-4">
             <FaEnvelope className="mr-2" />
             <input

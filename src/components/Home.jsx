@@ -1,8 +1,12 @@
+import LandingGallery from "./landingSection/LandingGallery";
+import ArtistList from "../Pages/Artist/ArtistList";
 
 const Home = () => {
   return (
-    <div>
-    </div>
+    <>
+      <LandingGallery />
+      <ArtistList />
+    </>
   )
 }
 

@@ -34,4 +34,4 @@ const ArtistList = () => {
   )
 }
 
-export default ArtistList
+export default ArtistList;

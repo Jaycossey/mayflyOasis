@@ -5,6 +5,7 @@ import PRODUCT_DATA from '../../assets/MockData/Products';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import './ArtistProfile.css';
 
 const ArtistProfile = () => {
   const { id } = useParams();
@@ -50,7 +51,7 @@ const ArtistProfile = () => {
     return (
       <div
         className={className}
-        style={{ ...style, display: 'block', background: 'green' }}
+        style={{ ...style, display: 'block', background: 'grey' }}
         onClick={onClick}
       />
     );
@@ -59,7 +60,7 @@ const ArtistProfile = () => {
   return (
     <div className='content-container p-10 pt-28'>
       <div className='profile-data bg-white'>
-        <h1>{artist.name}s Profile</h1>
+        <h1>{artist.name} Profile</h1>
         <img src={artist.image} alt={artist.name} />
         <p>Occupation: {artist.occupation}</p>
         <p>Location: {artist.location}</p>
@@ -95,7 +96,6 @@ const ArtistProfile = () => {
         <div className='prodcut-card-container'>
           {artistArtworks.map((artwork) => (
             <div key={artwork.id} className='artwork'>
-              <h4>{artwork.title}</h4>
               <div className='image-carousel'>
                 <Slider {...carouselSettings}>
                   {artwork.images.map((image, index) => (
@@ -108,18 +108,20 @@ const ArtistProfile = () => {
                   ))}
                 </Slider>
               </div>
-
-              <p>Description: {artwork.description}</p>
-              <p>Year: {artwork.year}</p>
-              <p>Medium: {artwork.medium}</p>
-              <p>Dimensions: {artwork.dimensions}</p>
-              <p>Price: £{artwork.price}</p>
-              <button
-                onClick={() => addItem({ ...artwork, id: artwork.id })}
-                className='AddToCartButton'
-              >
-                Add to Cart
-              </button>
+              <div className='description p-4 md:w-1/2 flex flex-col'>
+                <h4>{artwork.title}</h4>
+                <p>Description: {artwork.description}</p>
+                <p>Year: {artwork.year}</p>
+                <p>Medium: {artwork.medium}</p>
+                <p>Dimensions: {artwork.dimensions}</p>
+                <p>Price: £{artwork.price}</p>
+                <button
+                  onClick={() => addItem({ ...artwork, id: artwork.id })}
+                  className='AddToCartButton'
+                >
+                  Add to Cart
+                </button>
+              </div>
             </div>
           ))}
         </div>

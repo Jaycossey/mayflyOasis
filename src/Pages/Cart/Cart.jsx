@@ -20,7 +20,7 @@ const Cart = () => {
                     left-0
                     right-10
                     bg-white
-                    bg-opacity-50'
+                    bg-opacity-85'
     >
       <h2>Cart</h2>
       {items.map((item) => (
@@ -40,7 +40,7 @@ const Cart = () => {
             >
               +
             </button>
-            <button  onClick={() => removeItem(item.id)}>Remove</button>
+            <button onClick={() => removeItem(item.id)}>Remove</button>
           </div>
         </div>
       ))}

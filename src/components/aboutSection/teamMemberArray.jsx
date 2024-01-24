@@ -13,7 +13,8 @@ const teamArray = [
     {
         name: "Arion",
         job: "Front End Developer",
-        quote: "Music is life"
+        quote: "Music is life",
+        image: "src/assets/images/arion.png"
     },
     {
         name: "Annie",

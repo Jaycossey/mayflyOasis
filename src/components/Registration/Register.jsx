@@ -1,8 +1,20 @@
-const Register = () => {
-    return (
-      <div>
-      </div>
-    )
-  }
+import { useState, useEffect } from "react";
+import {
+  //   FaUser,
+    FaEnvelope,
+    FaLock,
+    FaCalendar,
+    FaGlobe,
   
-  export default Register;
+  } from "react-icons/fa";
+
+
+
+
+export default function Register() {
+  return (
+    <div>
+      
+    </div>
+  )
+}

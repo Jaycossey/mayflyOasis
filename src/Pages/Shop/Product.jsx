@@ -52,7 +52,7 @@ const Product = (props) => {
     return (
       <div
         className={className}
-        style={{ ...style, display: 'block', background: 'green' }} // Customize this as needed
+        style={{ ...style, display: 'block', background: 'green' }}
         onClick={onClick}
       />
     );

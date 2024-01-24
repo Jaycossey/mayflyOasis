@@ -21,7 +21,16 @@ const ArtistProfile = () => {
     <div className='content-container p-10 pt-28'>
       <div className='profile-data'>
         <h1>{artist.name}s Profile</h1>
-        <img src={artist.image} alt={artist.name} />
+        <img
+          className='w-40 
+                        h-40 
+                        rounded-full 
+                        border-4
+                        border-red-300 
+                        m-auto'
+          src={artist.image}
+          alt={artist.name}
+        />
         <p>Occupation: {artist.occupation}</p>
         <p>Location: {artist.location}</p>
         <div>

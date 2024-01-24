@@ -6,8 +6,8 @@ import profile5 from '../MockData/MockImages/profile5.jpg';
 import profile6 from '../MockData/MockImages/profile6.jpg';
 import profile7 from '../MockData/MockImages/profile7.jpg';
 import profile8 from '../MockData/MockImages/profile8.jpg';
-import profile9 from '../MockData/MockImages/profile8.jpg';
-import profile10 from '../MockData/MockImages/profile8.jpg';
+import profile9 from '../MockData/MockImages/profile9.jpg';
+import profile10 from '../MockData/MockImages/profile10.jpg';
 
 const ARTISTPROFILE = [
   {

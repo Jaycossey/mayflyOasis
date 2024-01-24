@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
-import ARTISTPROFILE from '../../assets/MockData/ArtistData';
 import { useCart } from 'react-use-cart';
+import ARTISTPROFILE from '../../assets/MockData/artistData';
 import PRODUCT_DATA from '../../assets/MockData/Products';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';

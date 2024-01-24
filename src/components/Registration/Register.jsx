@@ -10,15 +10,18 @@ import {
 // Formik variables
 import { useFormik, Formik, Form } from "formik";
 import { signUpSchema } from "./schema";
-const initialValues = {
-  username: "",
-  name: "",
-  email: "",
-  password: "",
-  confirmPassword: ""
-};
 
 export default function Register() {
+  const initialValues = useFormik({
+    initialValues: {
+    username: "",
+    name: "",
+    email: "",
+    password: "",
+      confirmPassword: ""
+    }
+  });
+
   // Choose from the list of countries
   const [countries, setCountries] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState("");
@@ -97,9 +100,9 @@ export default function Register() {
                   className="w-64 p-2 border-b border-gray-500 bg-transparent outline-none placeholder-gray-500"
                   placeholder="Your Email"
                   name="email"
-                  value={values.email}
+                  value={initialValues.values.email}
                   onBlur={handleBlur}
-                  onChange={handleChange}
+                  onChange={initialValues.handleChange}
                 />
               </div>
               {/*--------------- Email Error Container ---------------  */}

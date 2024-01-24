@@ -6,8 +6,17 @@ import './Product.css';
 
 const Product = (props) => {
   const { addItem } = useCart();
-  const { id, title, artist, description, year, medium, dimensions, price } =
-    props.data;
+  const {
+    id,
+    image,
+    title,
+    artist,
+    description,
+    year,
+    medium,
+    dimensions,
+    price,
+  } = props.data;
 
   const handleAddToCart = () => {
     addItem({ ...props.data, id });
@@ -17,11 +26,37 @@ const Product = (props) => {
     initialSlide: 0,
     dots: true,
     infinite: true,
-    autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: false,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    arrows: true,
   };
+
+  function PrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: 'block', background: 'grey' }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function NextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: 'block', background: 'green' }} // Customize this as needed
+        onClick={onClick}
+      />
+    );
+  }
 
   return (
     <div className='product bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg'>

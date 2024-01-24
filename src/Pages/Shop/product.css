@@ -17,3 +17,6 @@
   border-radius: 5px;
   margin-top: 10px;
 }
+.AddToCartButton:hover {
+  background-color: #373737;
+}

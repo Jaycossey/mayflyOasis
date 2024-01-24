@@ -11,7 +11,8 @@ const Cart = () => {
     navigate('/Checkout');
   };
   return (
-    <div className='cart-container 
+    <div
+      className='cart-container 
                     absolute
                     mt-28
                     w-full
@@ -19,11 +20,12 @@ const Cart = () => {
                     left-0
                     right-10
                     bg-white
-                    bg-opacity-50'>
+                    bg-opacity-50'
+    >
       <h2>Cart</h2>
       {items.map((item) => (
         <div key={item.id} className='cart-item'>
-          <img src={item.image} alt='' />
+          <img src={item.images[0]} alt='cart-item-image' />
           <h3>{item.title}</h3>
           <p>Price: £{item.price}</p>
           <div className='cart-item-actions'>
@@ -38,7 +40,7 @@ const Cart = () => {
             >
               +
             </button>
-            <button onClick={() => removeItem(item.id)}>Remove</button>
+            <button  onClick={() => removeItem(item.id)}>Remove</button>
           </div>
         </div>
       ))}

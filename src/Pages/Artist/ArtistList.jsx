@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import ARTISTPROFILE from '../../assets/MockData/artistData';
+import ARTISTPROFILE from '../../assets/MockData/ArtistData';
 import './ArtistList.css';
 
 const ArtistList = () => {

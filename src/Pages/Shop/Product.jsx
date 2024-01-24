@@ -6,17 +6,8 @@ import './Product.css';
 
 const Product = (props) => {
   const { addItem } = useCart();
-  const {
-    id,
-    image,
-    title,
-    artist,
-    description,
-    year,
-    medium,
-    dimensions,
-    price,
-  } = props.data;
+  const { id, title, artist, description, year, medium, dimensions, price } =
+    props.data;
 
   const handleAddToCart = () => {
     addItem({ ...props.data, id });
@@ -41,7 +32,12 @@ const Product = (props) => {
     return (
       <div
         className={className}
-        style={{ ...style, display: 'block', background: 'grey' }}
+        style={{
+          ...style,
+          display: 'block',
+          position: 'absolute',
+          background: 'grey',
+        }}
         onClick={onClick}
       />
     );

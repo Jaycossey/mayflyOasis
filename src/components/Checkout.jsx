@@ -1,5 +1,4 @@
 import './Checkout.css';
-// import ThankYouModal from './ThankYouModal';
 
 const Checkout = () => {
   const handleSubmit = (e) => {

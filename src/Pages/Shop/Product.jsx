@@ -2,7 +2,7 @@ import { useCart } from 'react-use-cart';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Product.css';
+import './product.css';
 
 const Product = (props) => {
   const { addItem } = useCart();

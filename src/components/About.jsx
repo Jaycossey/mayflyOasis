@@ -2,9 +2,12 @@ import ParaContainer from "./aboutSection/ParaContainer";
 import fetchText from "./utils/fetchText";
 import Team from "./aboutSection/Team";
 import teamArray from "./aboutSection/teamMemberArray";
+// Temp data until I can get the fetch working asyncrobously
+import aboutText from "./aboutSection/aboutText";
 
 // About MayflyOasis
 const About = () => {
+  const about = aboutText;
   // async await || promises, might be worth checking them out asap, be a good challenge, will read up tonight and go from there.
   const welcome = fetchText('src/assets/textFiles/aboutWelcome.txt');
   const mission = fetchText('src/assets/textFiles/mission.txt');
@@ -34,9 +37,9 @@ const About = () => {
       </p>
 
       {/* Text containers, takes text values as props */}
-      <ParaContainer text={welcome} />
-      <ParaContainer text={mission} />
-      <ParaContainer text={vision} />
+      <ParaContainer text={about.welcome} />
+      <ParaContainer text={about.mission} />
+      <ParaContainer text={about.vision} />
 
       {/* DevTeam member section */}
       <div className="flex 

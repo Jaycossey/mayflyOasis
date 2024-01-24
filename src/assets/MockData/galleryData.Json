@@ -1,23 +1,23 @@
 [
   {
     "id": "artwork-1",
-    "title": "Sunset Over Thames",
+    "title": "Serene Ripples",
     "artist": "Olivia Brown",
-    "image": "./assets/MockData/MockImages/mocki1.jpg",
-    "description": "A captivating sunset view over the River Thames.",
+    "image": "./assets/MockData/MockImages/W1.jpg",
+    "description": "A textured portrayal of tranquility in white, evoking the gentle caress of wind over a snow-blanketed landscape.",
     "year": 2021,
     "medium": "Oil on Canvas",
     "dimensions": "60x40 cm"
   },
   {
     "id": "artwork-2",
-    "title": "Scottish Highlands",
+    "title": "Celestial Resonance",
     "artist": "Ethan Taylor",
-    "image": "./assets/MockData/MockImages/mocki2.jpg",
-    "description": "The raw beauty of the Scottish Highlands captured in this stunning piece.",
+    "image": "./assets/MockData/MockImages/BC1.jpg",
+    "description": "Textured black and gold spiral, embodies the cosmic dance of darkness and light.",
     "year": 2020,
     "medium": "Acrylic",
-    "dimensions": "80x60 cm"
+    "dimensions": "20x20 cm"
   },
   {
     "id": "artwork-3",

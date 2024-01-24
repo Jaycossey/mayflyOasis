@@ -1,0 +1,7 @@
+const aboutText = {
+    welcome: "Hello Mayflies! Welcome to the Mayfly Oasis. The ethical way to purchase art. For every purchase made through us, you can be certain that you are supporting a good cause.",
+    mission: "Our mission is to create a hassle free way to purchase artwork, with no signup, no subscriptions, just you, your chosen artist and artwork. With a drive to do better for the world, to create a fairer and kinder community, and to do our part to repair the world's climate, we give our  artists the option to choose a charity that means something to them, as well as donating to Friends of the Earth, a charity that holds dear to all of us here at MayflyOasis. Together we can create a world in which we all can be proud of, a world for positive change, a world that we all call home.",
+    vision: "While MayflyOasis is currently a concept piece, we hope to create the one stop place for artists and customers alike. Users can come to the Oasis to purchase artwork with no fuss or hassle, we understand that creating more accounts to only be flooded with spam emails is something noone wants.  That is why we have created the hassle free way to purchase artwork from your favorite artists and at the same time provide a way we can all make a positive change in the world."
+}
+
+export default aboutText;

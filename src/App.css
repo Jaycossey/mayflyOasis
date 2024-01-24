@@ -6,9 +6,10 @@ html, body {
 }
 
 body {
-  background-image: url("./assets/background/vectors/t13.svg");
-  font-family: "catcheye-webfont";
+  background-image: url("./assets/background/vectors/t15.svg");
+  font-family: "catcheye2";
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body::-webkit-scrollbar {
@@ -24,7 +25,7 @@ body::-webkit-scrollbar {
 
 @font-face {
   font-family: "catcheye-webfont";
-  src: url('./assets/fonts/Willkids.otf') format('woff2');
+  src: url('./assets/fonts/BaseNeue-ExpandedMedium.ttf') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-synthesis: none;
@@ -35,7 +36,7 @@ body::-webkit-scrollbar {
 
 @font-face {
   font-family: "catcheye2";
-  src: url('./assets/fonts/TiltPenX.ttf') format('woff2');
+  src: url('./assets/fonts/BaseNeue-ExpandedMedium.ttf') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-synthesis: none;
@@ -47,5 +48,6 @@ body::-webkit-scrollbar {
 
 nav {
   font-family: "catcheye-webfont";
+  opacity: 80%;
 }
 

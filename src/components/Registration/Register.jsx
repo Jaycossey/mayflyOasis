@@ -9,6 +9,24 @@ import {
 } from "react-icons/fa";
 
 export default function Register() {
+  // Choose from the list of countries
+  const [countries, setCountries] = useState([]);
+  const [selectedCountry, setSelectedCountry] = useState("");
+
+  //  useEffect for fetching country
+  useEffect(() => {
+    const fetchCountries = async () => {
+      try {
+        const response = await fetch("https://restcountries.com/v3.1/all");
+        const data = await response.json();
+        setCountries(data);
+      } catch (error) {
+        console.error("Error fetching countries:", error);
+      }
+    };
+
+    fetchCountries();
+  }, []);
   return (
     <div
       className="flex flex-col items-center justify-center h-screen bg-cover"

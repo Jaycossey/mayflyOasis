@@ -19,7 +19,8 @@ const teamArray = [
     {
         name: "Annie",
         job: "Front End Developer",
-        quote: "Rule the world"
+        quote: "Rule the world",
+        image: "src/assets/images/AnnieRizvi.jpg"
     }
 ]
 

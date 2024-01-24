@@ -18,6 +18,21 @@ p-8 rounded-lg shadow-md">
         <h2 className="text-3xl text-gray-800 font-semibold mb-6">
           Create an Account at Mayfly Oasis
         </h2>
+        <form className="flex flex-col items-center">
+          {/* -------- FullName --------*/}
+          <div>FullName</div>
+          {/* -------- Email --------*/}
+          <div>Email</div>
+          {/* -------- DOB -------- */}
+          <div>DOB</div>
+          {/* -------- Country --------*/}
+          <div>Country</div>
+          {/* -------- Password -------- */}
+          <div>Password</div>
+          {/* -------- ConfirmPassword -------- */}
+          <div>confirmPassword</div>
+
+        </form>
       </div>
     </div>
   );

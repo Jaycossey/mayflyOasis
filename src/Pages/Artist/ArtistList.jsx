@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import ARTISTPROFILE from '../../assets/MockData/artistData';
-import './ArtistList.css';
+import { Link } from 'react-router-dom'
+import ARTISTPROFILE from '../../assets/MockData/artistData'
+import './ArtistList.css'
 
 const ArtistList = () => {
   return (
@@ -21,7 +21,8 @@ const ArtistList = () => {
             />
             <div className='description p-4'>
               <h2 className='text-sm font-semibold'>{artist.name}</h2>
-              <p className='text-md text-gray-500'>{artist.occupation}</p>
+              <p className='text-xs text-gray-600'>{artist.occupation}</p>
+
               <Link to={`/artist/${artist.id}`} className='ViewProfileButton'>
                 View Profile
               </Link>
@@ -30,7 +31,7 @@ const ArtistList = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ArtistList;
+export default ArtistList

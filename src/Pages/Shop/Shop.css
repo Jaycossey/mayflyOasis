@@ -1,0 +1,16 @@
+.shop {
+    margin-top: calc(5rem - var(--navbar-height));
+    padding: 2rem 0;
+    background-color: var(--color-background);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .shop h1 {
+    margin-top: 0;
+  }
+
+  

@@ -190,8 +190,8 @@ export default function Register() {
                 Register
               </button>
               <p className="mt-4 text-gray-600">
-                Already have an account at Mayfly Oasis?{" "}
-                <a href="/login" className="text-black-500">
+                Already have an account at Mayfly Oasis?
+                <a href="./Login" className="text-black-500">
                   Login here
                 </a>
               </p>

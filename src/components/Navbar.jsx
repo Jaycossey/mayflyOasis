@@ -44,12 +44,12 @@ const Navbar = ({ loading }) => {
         >
           Login
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to='/ArtistList'
           className='px-10 rounded py-26text-black lg:mx-2 lg:my-0'
         >
           Artist
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to='/shop'
           className='px-10 rounded py-26text-black lg:mx-2 lg:my-0'

@@ -3,7 +3,7 @@ import ARTISTPROFILE from '../../assets/MockData/artistData';
 import './ArtistList.css';
 const ArtistList = () => {
   return (
-    <div className='container'>
+    <div className='container mx-auto'>
       <div className='header-container'>
         <h1>.</h1>
       </div>

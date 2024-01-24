@@ -3,6 +3,7 @@ const ParaContainer = (props) => {
     return (
         <p className="mb-4 
                     text-lg
+                    text-slate-500
                     h-full
                     altBg
                     m-auto

@@ -1,9 +1,22 @@
 import { useState } from "react";
 import { FaEnvelope, FaLock } from "react-icons/fa";
+import { useFormik } from 'formik';
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  // SignIn Validation Variables
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    onSubmit: (values) => { 
+      console.log(values);
+    }
+  })
+
 
   const handleSubmit = e => {
     e.preventDefault();

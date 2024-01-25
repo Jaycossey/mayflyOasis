@@ -5,14 +5,14 @@ import artistArray from '../../assets/MockData/ArtistArray';
 import PRODUCTS from '../../assets/MockData/Products';
 import rngesus from '../utils/rngesus';
 
+// array to store previous artists work. 
 const previousGallery = [];
-
 
 // Spotlight gallery for home page
 const LandingGallery = () => {
     // state handlers for gallery rotation, random initial index
     const [currentGallery, setCurrentGallery] = useState(rngesus(PRODUCTS.length));  
-    // // 
+    // // tried state initially, not sure why it didnt work, need to find a fix
     // const [previousGallery, setPreviousGallery] = useState([]);
 
     
@@ -30,7 +30,7 @@ const LandingGallery = () => {
 
       // handle previous. have a bug here, need to work out how to track the previous iteration
       } else if(event.target.id === "<") {
-        setCurrentGallery(previousGallery[0.]);
+        setCurrentGallery(previousGallery[0]);
       }
     }
 

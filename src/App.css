@@ -1,4 +1,4 @@
-html, body {
+html, body, nav {
   overflow-x: hidden;
   overscroll-behavior-y: none;
   -ms-overflow-style: none;  /* for Internet Explorer/Edge */

@@ -56,7 +56,7 @@ const Product = (props) => {
   }
 
   return (
-    <div className='product bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg'>
+    <div className=' bg-white border bg-opacity-5 backdrop-filter backdrop-blur-md border-gray-300 rounded-lg overflow-hidden shadow-lg'>
       <div className='product-card-container'>
         {/* Carousel for Product Images */}
         <div className='image-carousel'>
@@ -71,17 +71,19 @@ const Product = (props) => {
             ))}
           </Slider>
         </div>
+        </div>
 
         {/* Description and Action Container */}
-        <div className='description p-6 md:w-1/2 flex flex-col'>
+        <div className=' artist-grid'>
+        <div className='description flex flex-col'>
           <h2 className='text-xl font-semibold'>{title}</h2>
-          <h3 className='text-md text-gray-500'>{artist}</h3>
-          <p className='text-sm my-2'>{description}</p>
-          <p className='text-sm text-gray-600'>
+          <h3 className='text- text-gray-500'>{artist}</h3>
+          <p className='my-2 text-xs'>{description}</p>
+          <p className='text-xs text-gray-600'>
             {year}, {medium}, {dimensions}
           </p>
-          <p>£{price}</p>
-          <button onClick={handleAddToCart} className='AddToCartButton w-full'>
+          <p className='my-2 text-lg font-bold md-10'>£{price}</p>
+          <button onClick={handleAddToCart} className='AddToCartButton'>
             Add to Cart
           </button>
         </div>

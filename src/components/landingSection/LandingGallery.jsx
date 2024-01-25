@@ -1,11 +1,14 @@
 import SpotlightData from '../SpotlightData';
 import Button from './Button';
 import artistArray from '../../assets/MockData/ArtistArray';
-
+import PRODUCTS from '../../assets/MockData/Products';
+import rngesus from '../utils/rngesus';
 // Spotlight gallery for home page
 const LandingGallery = () => {
-  //
-  const artist = artistArray[0];
+  // CREATE RNGSUS FOR PRODUCTS[i];
+  const i = rngesus(PRODUCTS.length);
+  const artist = PRODUCTS[i];
+  const prevIterations = [];
 
     return (
         // Container for gallery

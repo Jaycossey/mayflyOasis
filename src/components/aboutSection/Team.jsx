@@ -11,10 +11,11 @@ const Team = (props) => {
                         text-center
                         bg-slate-600
                         bg-opacity-50
-                        p-6">
+                        p-6 
+                        text-xs">
 
             <img src={props.image} 
-                className="w-40 
+                className="w-40
                         h-40 
                         rounded-full 
                         border-4

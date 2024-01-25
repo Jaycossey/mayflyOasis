@@ -11,7 +11,7 @@ const Cart = () => {
   };
 
   return (
-    <div className='cart-container absolute mt-28 w-full p-10 left-0 right-10 bg-white bg-opacity-85'>
+    <div className='cart-container absolute mt-28 w-full p-10 left-0 right-10 bg-white bg-opacity-85 rounded-lg'>
       <div className='cart-heading'>
         <h2>Cart</h2>
       </div>

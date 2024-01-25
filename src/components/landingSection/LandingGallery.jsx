@@ -41,8 +41,8 @@ const LandingGallery = () => {
             className="grid 
                         grid-cols-5 
                         grid-rows-5 
-                        pt-20
-                        pb-10 
+                        pt-24
+                        pb-10
                         m-auto 
                         bg-slate-500 
                         bg-opacity-50

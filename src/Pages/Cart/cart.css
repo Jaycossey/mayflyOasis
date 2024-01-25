@@ -71,3 +71,9 @@
 .cart-checkout-btn:hover {
   background-color: #000000;
 }
+
+.cart-heading {
+  font-size: 1.5em;
+  margin-bottom: 5%;
+  font-weight: bold;
+}

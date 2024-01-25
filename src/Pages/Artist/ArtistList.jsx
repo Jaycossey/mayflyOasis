@@ -1,18 +1,25 @@
-import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 import ARTISTPROFILE from '../../assets/MockData/artistData';
 import './ArtistList.css';
 
 const ArtistList = () => {
   return (
-      <div className='p-10 mt-10 artist-grid'>
+    <div className='container mx-auto'>
+      <div className='header-container'>
+        <h1 className='text-lg font-semibold'>Our Artist</h1>
+      </div>
+      <div className='artist-grid bg-white border bg-opacity-5 backdrop-filter backdrop-blur-md border-gray-300 rounded-lg overflow-hidden shadow-lg mt-10 p-10'>
         {ARTISTPROFILE.map((artist) => (
-          <div className='bg-white bg-opacity-30 backdrop-filter backdrop-blur-md artist-card ' key={artist.id}>
+          <div
+            className='artist-card bg-white border bg-opacity-5 backdrop-filter backdrop-blur-md border-gray-300 rounded-lg overflow-hidden shadow-lg'
+            key={artist.id}
+          >
             <img
               src={artist.image}
               alt={artist.name}
               className='artist-image'
             />
-            <div className='p-4 description'>
+            <div className='description p-4'>
               <h2 className='text-sm font-semibold'>{artist.name}</h2>
               <p className='text-xs text-gray-600'>{artist.occupation}</p>
               <Link to={`/artist/${artist.id}`} className='ViewProfileButton'>
@@ -22,6 +29,7 @@ const ArtistList = () => {
           </div>
         ))}
       </div>
+    </div>
   );
 };
 export default ArtistList;

@@ -28,34 +28,35 @@ const Product = (props) => {
   };
 
   function PrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          display: 'block',
-          position: 'absolute',
-          background: 'grey',
-        }}
+      <button
+        type='button'
+        className={`${className} w-8 h-8 border-4 border-slate-300 border-double rounded-full cursor-pointer bg-slate-400 text-lg text-center row-start- m-auto shadow-lg shadow-slate-200 hover:scale-25 transition`}
         onClick={onClick}
-      />
+        aria-label='Previous'
+      >
+        &lt;
+      </button>
     );
   }
 
   function NextArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
-      <div
-        className={className}
-        style={{ ...style, display: 'block', background: 'grey' }}
+      <button
+        type='button'
+        className={`${className} w-8 h-8 border-4 border-slate-300 border-double rounded-full cursor-pointer bg-slate-400 text-lg text-center row-start- m-auto shadow-lg shadow-slate-200 hover:scale-25 transition`}
         onClick={onClick}
-      />
+        aria-label='Next'
+      >
+        &gt;
+      </button>
     );
   }
 
   return (
-    <div className='p-8 bg-white rounded-lg shadow-md bg-opacity-30 backdrop-filter backdrop-blur-md '>
+    <div className='product bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg'>
       <div className='product-card-container'>
         {/* Carousel for Product Images */}
         <div className='image-carousel'>
@@ -72,15 +73,15 @@ const Product = (props) => {
         </div>
 
         {/* Description and Action Container */}
-        <div className=' artist-grid'>
+        <div className='description p-6 md:w-1/2 flex flex-col'>
           <h2 className='text-xl font-semibold'>{title}</h2>
           <h3 className='text-sm text-gray-500'>{artist}</h3>
           <p className='my-2 text-xs'>{description}</p>
           <p className='text-xs text-gray-600'>
             {year}, {medium}, {dimensions}
           </p>
-          <p className='my-2 text-lg font-bold md-10'>£{price}</p>
-          <button onClick={handleAddToCart} className='AddToCartButton'>
+          <p>£{price}</p>
+          <button onClick={handleAddToCart} className='AddToCartButton w-full'>
             Add to Cart
           </button>
         </div>

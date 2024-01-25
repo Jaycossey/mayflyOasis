@@ -7,8 +7,9 @@
   height: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-.prodcut-card-container {
+.product-card-container {
   padding: 30px;
+  margin-bottom: 20px;
 }
 .image-carousel img {
   width: 100%;

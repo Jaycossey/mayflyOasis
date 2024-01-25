@@ -12,15 +12,7 @@ const Cart = () => {
   };
   return (
     <div
-      className='cart-container 
-                    absolute
-                    mt-28
-                    w-full
-                    p-10
-                    left-0
-                    right-10
-                    bg-white
-                    bg-opacity-85'
+      className='absolute left-0 w-full p-1 cart-container mt-28 right-10 backdrop-filter backdrop-blur-sm'
     >
       <h2>Cart</h2>
       {items.map((item) => (

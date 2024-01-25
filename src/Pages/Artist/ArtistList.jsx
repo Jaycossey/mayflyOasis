@@ -4,19 +4,15 @@ import './ArtistList.css';
 
 const ArtistList = () => {
   return (
-    <div className='container mx-auto'>
-      <div className='header-container'>
-        <h1>.</h1>
-      </div>
-      <div className='artist-grid mt-10 p-10'>
+      <div className='p-10 mt-10 artist-grid'>
         {ARTISTPROFILE.map((artist) => (
-          <div className='artist-card' key={artist.id}>
+          <div className='bg-white bg-opacity-30 backdrop-filter backdrop-blur-md artist-card ' key={artist.id}>
             <img
               src={artist.image}
               alt={artist.name}
               className='artist-image'
             />
-            <div className='description p-4'>
+            <div className='p-4 description'>
               <h2 className='text-sm font-semibold'>{artist.name}</h2>
               <p className='text-xs text-gray-600'>{artist.occupation}</p>
               <Link to={`/artist/${artist.id}`} className='ViewProfileButton'>
@@ -26,7 +22,6 @@ const ArtistList = () => {
           </div>
         ))}
       </div>
-    </div>
   );
 };
 export default ArtistList;

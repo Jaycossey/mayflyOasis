@@ -6,12 +6,10 @@ import Cart from './Pages/Cart/Cart';
 import Shop from './Pages/Shop/Shop';
 import Checkout from './components/Checkout';
 import { CartProvider } from 'react-use-cart';
-import ArtistList from './Pages/Artist/ArtistList'; // Import the TeamPage component
 import ArtistProfile from './Pages/Artist/ArtistProfile'; // Import the ArtistProfile component
 import Register from './components/Registration/Register'
 import Login from './components/Registration/Login';
 import Home from './components/Home';
-
 import About from './components/About'
 import './App.css'
 

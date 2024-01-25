@@ -6,9 +6,9 @@ const Checkout = () => {
   };
 
   return (
-    <div className='checkout-form'>
+    <div className='checkout-form w-screen h-10/12 pt-40'>
       {' '}
-      <form onSubmit={handleSubmit}>
+      <form className="relative my-auto mx-auto" onSubmit={handleSubmit}>
         <h1>Checkout</h1>
         <input type='text' placeholder='Full Name' required />
         <input type='email' placeholder='Email Address' required />

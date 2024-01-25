@@ -28,14 +28,6 @@ const About = () => {
                   gap-10 
                   overflow-auto">
 
-      {/* About us title */}
-      <p className="mb-4 
-                  text-4xl 
-                  font-semibold 
-                  text-red-500">
-              Hello Mayflies!
-      </p>
-
       {/* Text containers, takes text values as props */}
       <ParaContainer text={about.welcome} />
       <ParaContainer text={about.mission} />

@@ -30,7 +30,7 @@ const LandingGallery = () => {
 
       // handle previous. have a bug here, need to work out how to track the previous iteration
       } else if(event.target.id === "<") {
-        setCurrentGallery(previousGallery[0]);
+        setCurrentGallery(previousGallery[0.]);
       }
     }
 

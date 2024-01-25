@@ -11,7 +11,8 @@ const ParaContainer = (props) => {
                     rounded-md
                     p-6
                     shadow-xl
-                    shadow-black">
+                    shadow-black
+                    txtShad">
                 {props.text}
         </p>
 

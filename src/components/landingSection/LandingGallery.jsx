@@ -15,7 +15,7 @@ const LandingGallery = () => {
     // // tried state initially, not sure why it didnt work, need to find a fix
     // const [previousGallery, setPreviousGallery] = useState([]);
 
-    
+  // USE EFFECT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     const handleClick = () => {
       console.log("click", event.target.id);
 
@@ -41,7 +41,8 @@ const LandingGallery = () => {
             className="grid 
                         grid-cols-5 
                         grid-rows-5 
-                        p-20 
+                        pt-20
+                        pb-10 
                         m-auto 
                         bg-slate-500 
                         bg-opacity-50

@@ -12,7 +12,7 @@ const About = () => {
   const welcome = fetchText('src/assets/textFiles/aboutWelcome.txt');
   const mission = fetchText('src/assets/textFiles/mission.txt');
   const vision = fetchText('src/assets/textFiles/vision.txt');
-  console.log(welcome, mission, vision);
+  // console.log(welcome, mission, vision);
   return (
     // Container for about section -- updated to fixed position to allow for navbar separation
     <div className="text-gray-800 
@@ -41,7 +41,11 @@ const About = () => {
                       gap-10">
 
         {teamArray.map((staff) => {
-          return <Team name={staff.name} job={staff.job} quote={staff.quote} image={staff.image} />
+          return <Team key={"team" + staff.name}
+                      name={staff.name} 
+                      job={staff.job} 
+                      quote={staff.quote} 
+                      image={staff.image} />
         })}
 
       </div>

@@ -1,5 +1,5 @@
 const ParaContainer = (props) => {
-    console.log(props);
+    // console.log(props);
     return (
         <p className="mb-4 
                     text-lg

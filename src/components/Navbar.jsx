@@ -26,12 +26,12 @@ const Navbar = ({ loading }) => {
         >
           About
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to='/contact'
           className='px-10 rounded py-26text-black lg:mx-2 lg:my-0'
         >
           Contact
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to='/Register'
           className='px-10 rounded py-26text-black lg:mx-2 lg:my-0'

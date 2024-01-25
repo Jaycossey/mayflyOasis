@@ -6,8 +6,8 @@ const SpotlightData = (props) => {
     return (
         <>
             {/* Image of artists work */}
-            <img src={artistCopy.artworks[0].imageUrl} 
-                alt={artistCopy.artworks[0].title}
+            <img src={artistCopy.images[0]} 
+                alt={artistCopy.title}
                 className="border-2
                         rounded-2xl
                         h-80
@@ -20,7 +20,7 @@ const SpotlightData = (props) => {
             <p className="text-right
                         mr-6
                         mt-2">
-                {artistCopy.artist.name} - {artistCopy.artworks[0].title} 
+                {artistCopy.artist} - {artistCopy.title} 
             </p>
 
             {/* Short description of artists work */}
@@ -33,7 +33,7 @@ const SpotlightData = (props) => {
                         mt-4
                         p-2
                         ">
-                {artistCopy.artworks[0].description}
+                {artistCopy.description}
             </p>
         </>
     );

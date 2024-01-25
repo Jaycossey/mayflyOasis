@@ -19,8 +19,16 @@ body::-webkit-scrollbar {
 
 /* About Section Styling */
 
+.altBg {
+  background-color: white;
+}
+
 .altBg:nth-child(2n) {
   background-color: gray;
+}
+
+.txtShad {
+  text-shadow: 0 0 5px blue;
 }
 
 @font-face {

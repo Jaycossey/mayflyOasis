@@ -5,10 +5,10 @@ import './ArtistList.css';
 const ArtistList = () => {
   return (
     <div className='container mx-auto'>
-      <div className='header-container'>
-        <h1>.</h1>
-      </div>
-      <div className='artist-grid mt-10 p-10'>
+      {/* <div className='header-container'>
+        //  <h1>.</h1> 
+      </div> */}
+      <div className='artist-grid pb-10'>
         {ARTISTPROFILE.map((artist) => (
           <div className='artist-card' key={artist.id}>
             <img

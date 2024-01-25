@@ -1,5 +1,5 @@
 const ParaContainer = (props) => {
-    console.log(props);
+    // console.log(props);
     return (
         <p className="mb-4 
                     text-lg
@@ -11,7 +11,8 @@ const ParaContainer = (props) => {
                     rounded-md
                     p-6
                     shadow-xl
-                    shadow-black">
+                    shadow-black
+                    txtShad">
                 {props.text}
         </p>
 

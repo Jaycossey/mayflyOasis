@@ -1,18 +1,10 @@
 // Button component to iterate through artist spotlight
 const Button = (props) => {
-    const handleClick = () => {
-        if (props.direction === "\<") {
-            // console.log("LeftClick");
-            return "previousClick";
-        } else {
-            // console.log("RightClick");
-            return "nextClick";
-        }
-    }
 
     return (
         <button type="button" 
-            onClick={handleClick}
+            id={props.direction}
+            onClick={props.onClick}
             className="w-14 
                     h-14
                     border-4

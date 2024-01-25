@@ -28,29 +28,30 @@ const Product = (props) => {
   };
 
   function PrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          display: 'block',
-          position: 'absolute',
-          background: 'grey',
-        }}
+      <button
+        type='button'
+        className={`${className} w-8 h-8 border-4 border-slate-300 border-double rounded-full cursor-pointer bg-slate-400 text-lg text-center row-start- m-auto shadow-lg shadow-slate-200 hover:scale-25 transition`}
         onClick={onClick}
-      />
+        aria-label='Previous'
+      >
+        &lt;
+      </button>
     );
   }
 
   function NextArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
-      <div
-        className={className}
-        style={{ ...style, display: 'block', background: 'grey' }}
+      <button
+        type='button'
+        className={`${className} w-8 h-8 border-4 border-slate-300 border-double rounded-full cursor-pointer bg-slate-400 text-lg text-center row-start- m-auto shadow-lg shadow-slate-200 hover:scale-25 transition`}
         onClick={onClick}
-      />
+        aria-label='Next'
+      >
+        &gt;
+      </button>
     );
   }
 
@@ -72,14 +73,14 @@ const Product = (props) => {
         </div>
 
         {/* Description and Action Container */}
-        <div className='description p-4 md:w-1/2 flex flex-col'>
+        <div className='description p-6 md:w-1/2 flex flex-col'>
           <h2 className='text-xl font-semibold'>{title}</h2>
           <h3 className='text-md text-gray-500'>{artist}</h3>
           <p className='text-sm my-2'>{description}</p>
           <p className='text-sm text-gray-600'>
             {year}, {medium}, {dimensions}
           </p>
-          <p className='text-lg font-bold my-2'>£{price}</p>
+          <p>£{price}</p>
           <button onClick={handleAddToCart} className='AddToCartButton'>
             Add to Cart
           </button>

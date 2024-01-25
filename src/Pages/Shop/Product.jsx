@@ -81,7 +81,7 @@ const Product = (props) => {
             {year}, {medium}, {dimensions}
           </p>
           <p>£{price}</p>
-          <button onClick={handleAddToCart} className='AddToCartButton'>
+          <button onClick={handleAddToCart} className='AddToCartButton w-full'>
             Add to Cart
           </button>
         </div>

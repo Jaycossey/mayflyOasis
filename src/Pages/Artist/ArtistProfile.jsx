@@ -104,13 +104,13 @@ const ArtistProfile = () => {
         </div>
       </section>
 
-      <section className='artist-gallery bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg'>
-        <h2 className='text-3xl font-bold text-center mb-6'>Gallery</h2>
-        <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6'>
+      <section className='product-gallery bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg'>
+        <h2 className='text-3xl font-bold text-center mb-6 p-4'>Gallery</h2>
+        <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8'>
           {artistArtworks.map((artwork) => (
             <div
               key={artwork.id}
-              className='artwork-item bg-white rounded-lg overflow-hidden shadow-lg p-4'
+              className='product-item bg-white rounded-lg overflow-hidden shadow-lg p-6 border border-gray-300'
             >
               <Slider {...carouselSettings}>
                 {artwork.images.map((image, index) => (
@@ -122,7 +122,7 @@ const ArtistProfile = () => {
                   </div>
                 ))}
               </Slider>
-              <div className='artwork-description p-4 mt-4'>
+              <div className='product-description p-4 mt-4'>
                 <h4 className='text-xl font-semibold'>{artwork.title}</h4>
                 <p className='text-sm my-2'>
                   Description: {artwork.description}

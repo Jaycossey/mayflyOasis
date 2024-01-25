@@ -56,7 +56,7 @@ const Product = (props) => {
   }
 
   return (
-    <div className='product bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg'>
+    <div className='p-8 bg-white rounded-lg shadow-md bg-opacity-30 backdrop-filter backdrop-blur-md '>
       <div className='product-card-container'>
         {/* Carousel for Product Images */}
         <div className='image-carousel'>
@@ -71,8 +71,10 @@ const Product = (props) => {
             ))}
           </Slider>
         </div>
+        </div>
 
         {/* Description and Action Container */}
+        <div className=' artist-grid'>
         <div className='description p-6 md:w-1/2 flex flex-col'>
           <h2 className='text-xl font-semibold'>{title}</h2>
           <h3 className='text-sm text-gray-500'>{artist}</h3>
@@ -80,8 +82,8 @@ const Product = (props) => {
           <p className='text-xs text-gray-600'>
             {year}, {medium}, {dimensions}
           </p>
-          <p>£{price}</p>
-          <button onClick={handleAddToCart} className='AddToCartButton w-full'>
+          <p className='my-2 text-lg font-bold md-10'>£{price}</p>
+          <button onClick={handleAddToCart} className='AddToCartButton'>
             Add to Cart
           </button>
         </div>

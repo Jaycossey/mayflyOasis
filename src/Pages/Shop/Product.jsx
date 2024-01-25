@@ -57,7 +57,7 @@ const Product = (props) => {
 
   return (
     <div className='product bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg'>
-      <div className='prodcut-card-container'>
+      <div className='product-card-container'>
         {/* Carousel for Product Images */}
         <div className='image-carousel'>
           <Slider {...carouselSettings}>

@@ -56,7 +56,7 @@ const Product = (props) => {
   }
 
   return (
-    <div className='p-8 bg-white rounded-lg shadow-md bg-opacity-30 backdrop-filter backdrop-blur-md '>
+    <div className=' bg-white border bg-opacity-5 backdrop-filter backdrop-blur-md border-gray-300 rounded-lg overflow-hidden shadow-lg'>
       <div className='product-card-container'>
         {/* Carousel for Product Images */}
         <div className='image-carousel'>
@@ -75,9 +75,9 @@ const Product = (props) => {
 
         {/* Description and Action Container */}
         <div className=' artist-grid'>
-        <div className='description p-6 md:w-1/2 flex flex-col'>
+        <div className='description flex flex-col'>
           <h2 className='text-xl font-semibold'>{title}</h2>
-          <h3 className='text-sm text-gray-500'>{artist}</h3>
+          <h3 className='text- text-gray-500'>{artist}</h3>
           <p className='my-2 text-xs'>{description}</p>
           <p className='text-xs text-gray-600'>
             {year}, {medium}, {dimensions}

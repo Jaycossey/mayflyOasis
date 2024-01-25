@@ -20,9 +20,9 @@ const Navbar = ({ loading }) => {
         <NavLink to='/about' className='px-10 py-2 text-black rounded lg:mx-2 lg:my-0'>
           About
         </NavLink>
-        <NavLink to='/contact' className='px-10 py-2 text-black rounded lg:mx-2 lg:my-0'>
-          Contact
-        </NavLink>
+        {/*<NavLink to='/contact' className='px-10 py-2 text-black rounded lg:mx-2 lg:my-0'>
+          Contact 
+  </NavLink>*/}
         <NavLink to='/Register' className='px-10 py-2 text-black rounded lg:mx-2 lg:my-0'>
           Register
         </NavLink>

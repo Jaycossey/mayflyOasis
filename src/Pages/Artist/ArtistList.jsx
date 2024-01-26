@@ -1,6 +1,6 @@
- import { Link } from 'react-router-dom';
 import ARTISTPROFILE from '../../assets/MockData/artistData';
 import './ArtistList.css';
+import ProfileCard from '../../components/ProfileCard';
 
 const ArtistList = () => {
   return (
@@ -21,23 +21,8 @@ const ArtistList = () => {
                       p-6'>
 
         {ARTISTPROFILE.map((artist) => (
-          <div
-            className='artist-card bg-white border bg-opacity-5 backdrop-filter backdrop-blur-md border-gray-300 rounded-lg overflow-hidden shadow-lg'
-            key={artist.id}
-          >
-            <img
-              src={artist.image}
-              alt={artist.name}
-              className='artist-image'
-            />
-            <div className='description p-4'>
-              <h2 className='text-sm font-semibold'>{artist.name}</h2>
-              <p className='text-xs text-gray-600'>{artist.occupation}</p>
-              <Link to={`/artist/${artist.id}`} className='ViewProfileButton'>
-                View Profile
-              </Link>
-            </div>
-          </div>
+          // Re-usable card to be able to carry styles across to team members as well.
+          <ProfileCard artist={artist} />
         ))}
       </div>
     </div>

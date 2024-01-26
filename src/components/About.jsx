@@ -4,6 +4,7 @@ import Team from "./aboutSection/Team";
 import teamArray from "./aboutSection/teamMemberArray";
 // Temp data until I can get the fetch working asyncrobously
 import aboutText from "./aboutSection/aboutText";
+import ProfileCard from "./ProfileCard";
 
 // About MayflyOasis
 const About = () => {
@@ -47,7 +48,6 @@ const About = () => {
                       quote={staff.quote} 
                       image={staff.image} />
         })}
-
       </div>
       
     </div>

@@ -1,25 +1,31 @@
+// in order to use this data with the profile cards:
+
+// job should be changed to "occupation:"
+// 
+
 const teamArray = [
     {
         name: "Ian",
-        job: "Front End Developer & Repo person",
+        occupation: "Front End Developer & Repo person",
         quote: "Automate everything",
-        image: "src/assets/images/ian.png"
+        image: "src/assets/images/ian.png",
+        link: "https://www.linkedin.com/in/ian-j-scott/"
     },
     {
         name: "Husniye",
-        job: "Front End Developer & Visionary",
+        occupation: "Front End Developer & Visionary",
         quote: "Cats are cool, but Front End Devs are cooler!",
         image: "src/assets/images/husniye.jpg"
     },
     {
         name: "Arion",
-        job: "Front End Developer & UI Designer",
+        occupation: "Front End Developer & UI Designer",
         quote: "Music is life",
         image: "src/assets/images/arion.png"
     },
     {
         name: "Annie",
-        job: "Front End Developer & Professional Nitpicker",
+        occupation: "Front End Developer & Professional Nitpicker",
         quote: "The best way to not feel hopeless is to get up and do something.",
         image: "src/assets/images/annie.jpg"
     }

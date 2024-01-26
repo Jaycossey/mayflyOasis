@@ -39,14 +39,12 @@ const About = () => {
                       flex-wrap 
                       items-center 
                       justify-center 
-                      gap-10">
+                      gap-10
+                      w-3/4
+                      m-auto">
 
         {teamArray.map((staff) => {
-          return <Team key={"team" + staff.name}
-                      name={staff.name} 
-                      job={staff.job} 
-                      quote={staff.quote} 
-                      image={staff.image} />
+          return <ProfileCard artist={staff} />
         })}
       </div>
       

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Logo from '../assets/logos/mfo-logo-icon.svg'
-import LandingGallery from './landingSection/LandingGallery'
+import Home from './Home'
 
 
 const LoadingScreen = () => {
@@ -31,7 +31,7 @@ const LoadingScreen = () => {
           </div>
         </div>
       )}
-      {!loading && <LandingGallery />}
+      {!loading && <Home />}
     </div>
   );
 };

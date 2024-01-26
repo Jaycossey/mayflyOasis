@@ -1,8 +1,7 @@
-html, body, nav {
+html, body {
   overflow-x: hidden;
   overscroll-behavior-y: none;
-  -ms-overflow-style: none;  /* for Internet Explorer/Edge */
-  scrollbar-width: none;  /* for Firefox */
+  -ms-overflow-style: none;  /* for Internet Explorer/Edge*/
 }
 
 body {
@@ -13,11 +12,10 @@ body {
 }
 
 body::-webkit-scrollbar {
-  display: none;  /* for Chrome, Safari, and Opera */
+  display: none;  /* for Chrome, Safari, and Opera*/
 }
 
-
-/* About Section Styling */
+/* About Section Styling*/
 
 .altBg {
   background-color: white;
@@ -53,12 +51,58 @@ body::-webkit-scrollbar {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 nav {
   font-family: "catcheye-webfont";
   opacity: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.customMargin {
-  margin-top: -80px;
+@media only screen and (max-width: 1200px) {
+  nav{
+    flex-direction: column;
+  }
+
+  /* Add logo size adjustment for screens smaller than 1200px */
+  .logo{
+    display: none
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav{
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  /* Add logo size adjustment for screens smaller than 800px */
+  .logo{
+    display: none
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav{
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  /* Add logo size adjustment for screens smaller than 600px */
+  .logo{
+    display: none
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav{
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  /* Add logo size adjustment for screens smaller than 400px */
+  .logo{
+    display: none
+  }
+  
 }

@@ -57,26 +57,26 @@ export default function Register() {
   });
   return (
     <div
-      className="flex flex-col items-center justify-center h-screen bg-cover"
+      className="flex flex-col items-center"
       style={{ backgroundImage: "url(your-background-image-url.jpg)" }}
     >
-      <div className="bg-white bg-opacity-30 backdrop-filter backdrop-blur-md p-8 rounded-lg shadow-md">
-        <h2 className="text-3xl text-gray-800 font-semibold mb-6">
+      <div className="items-center p-20 shadow-md rounded-xs bg-opacity-30 backdrop-filter backdrop-blur-xs">
+        <h2 className="p-20 text-3xl font-semibold text-gray-800 b-6">
           Create an Account at Mayfly Oasis
         </h2>
-        <Formik
+        <Formik className="flex flex-col items-center"
           initialValues={initialValues}
           validationSchema={signUpSchema}
           onSubmit={handleSubmit}>
           {/* restructure error */}
           {({ errors, touched }) =>
-            <Form className="flex flex-col items-center">
+            <Form className="flex flex-col items-center ">
               {/************..................................Name.................................************/}
-              <div className="flex items-center mb-4">
+              <div className="flex items-center bg-black ">
                 <FaUser className="mr-2" />
                 <input
                   type="text"
-                  className="w-64 p-2 border-b border-gray-500 bg-transparent outline-none placeholder-gray-500"
+                  className="w-64 p-2 placeholder-gray-500 bg-transparent border-b border-gray-500 outline-none"
                   placeholder="Name"
                   name="name"
                   value={values.name}
@@ -97,7 +97,7 @@ export default function Register() {
                 <FaEnvelope className="mr-2" />
                 <input
                   type="email"
-                  className="w-64 p-2 border-b border-gray-500 bg-transparent outline-none placeholder-gray-500"
+                  className="w-64 p-2 placeholder-gray-500 bg-transparent border-b border-gray-500 outline-none"
                   placeholder="Your Email"
                   name="email"
                   value={initialValues.values.email}
@@ -118,7 +118,7 @@ export default function Register() {
                 <FaCalendar className="mr-2" />
                 <input
                   type="date"
-                  className="w-64 p-2 border-b border-gray-500 bg-transparent outline-none placeholder-gray-500"
+                  className="w-64 p-2 placeholder-gray-500 bg-transparent border-b border-gray-500 outline-none"
                   placeholder="Date of Birth"
                 />
               </div>
@@ -128,7 +128,7 @@ export default function Register() {
                 <select
                   value={selectedCountry}
                   onChange={e => setSelectedCountry(e.target.value)}
-                  className="w-64 p-2 border-b border-gray-500 bg-transparent outline-none placeholder-gray-500"
+                  className="w-64 p-2 placeholder-gray-500 bg-transparent border-b border-gray-500 outline-none"
                 >
                   <option value="" disabled>
                     Select your Country
@@ -148,7 +148,7 @@ export default function Register() {
                 <FaLock className="mr-2" />
                 <input
                   type="password"
-                  className="w-64 p-2 border-b border-gray-500 bg-transparent outline-none placeholder-gray-500"
+                  className="w-64 p-2 placeholder-gray-500 bg-transparent border-b border-gray-500 outline-none"
                   placeholder="Your Password"
                   name="password"
                   value={values.password}
@@ -169,7 +169,7 @@ export default function Register() {
                 <FaLock className="mr-2" />
                 <input
                   type="password"
-                  className="w-64 p-2 border-b border-gray-500 bg-transparent outline-none placeholder-gray-500"
+                  className="w-64 p-2 placeholder-gray-500 bg-transparent border-b border-gray-500 outline-none"
                   placeholder="Confirm Password"
                   name="confirmPassword"
                   value={values.confirmPassword}
@@ -188,7 +188,7 @@ export default function Register() {
               {/************.............................Register Button.............................************/}
               <button
                 type="submit"
-                className="bg-black text-white rounded-md py-2 w-64 hover:bg-black-600"
+                className="w-64 py-2 text-white bg-black rounded-md hover:bg-black-600"
               >
                 Register
               </button>

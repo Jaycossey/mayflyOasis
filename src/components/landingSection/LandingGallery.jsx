@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import SpotlightData from '../SpotlightData';
 import Button from './Button';
-import artistArray from '../../assets/MockData/ArtistArray';
 import PRODUCTS from '../../assets/MockData/Products';
 import rngesus from '../utils/rngesus';
 
@@ -38,24 +37,14 @@ const LandingGallery = () => {
     return (
         // Container for gallery
         <div id="homeGalleryContainer" 
-            className="grid 
-                        grid-cols-5 
-                        grid-rows-5 
-                        pt-24
-                        pb-10
-                        m-auto 
-                        bg-slate-500 
-                        bg-opacity-50
-                        border-2">
+            className="grid grid-cols-5 grid-rows-5 pt-24 pb-10 m-auto bg-opacity-50 border-2 bg-slate-500">
             
             {/* Button to iterate previous artist in spotlight  onClick={handlePrevious} */}
             <Button direction={"<"} onClick={handleClick} />
 
             {/* Container for artist spotlight information */}
             <div id="contentContainer"
-                className="col-span-3 
-                            row-span-5 
-                            row-start-1">
+                className="col-span-3 row-span-5 row-start-1">
                 <SpotlightData artist={PRODUCTS[currentGallery]} />
             </div>
 

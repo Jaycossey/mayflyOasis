@@ -1,6 +1,5 @@
 import ParaContainer from "./aboutSection/ParaContainer";
 import fetchText from "./utils/fetchText";
-import Team from "./aboutSection/Team";
 import teamArray from "./aboutSection/teamMemberArray";
 // Temp data until I can get the fetch working asyncrobously
 import aboutText from "./aboutSection/aboutText";

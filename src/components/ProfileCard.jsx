@@ -13,7 +13,7 @@ const ProfileCard = (props) => {
         link = artist.link;
         blank = "_blank";
         referrer = "noopener noreferrer";
-        quote = `${artist.quote}`;
+        quote = `'${artist.quote}'`;
     }
 
     return (

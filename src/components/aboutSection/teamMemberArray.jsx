@@ -1,8 +1,3 @@
-// in order to use this data with the profile cards:
-
-// job should be changed to "occupation:"
-// 
-
 const teamArray = [
     {
         name: "Ian",

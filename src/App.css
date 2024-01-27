@@ -54,15 +54,11 @@ body::-webkit-scrollbar {
 nav {
   font-family: "catcheye-webfont";
   opacity: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
 }
 
 @media only screen and (max-width: 1200px) {
   nav{
-    flex-direction: column;
+   font-size: 10px;
   }
 
   /* Add logo size adjustment for screens smaller than 1200px */
@@ -73,36 +69,31 @@ nav {
 @media only screen and (max-width: 800px) {
   nav{
     font-size: 10px;
-    padding: 10px;
   }
 
-  /* Add logo size adjustment for screens smaller than 800px */
-  logo{
-    display: none
-  }
+
 }
 
 @media only screen and (max-width: 600px) {
   nav{
     font-size: 10px;
-    padding: 5px;
   }
 
-  /* Add logo size adjustment for screens smaller than 600px */
-  logo{
-    display: none
+  logo {
+    size: 10px;
   }
+
 }
 
 @media only screen and (max-width: 400px) {
   nav{
     font-size: 10px;
-    padding: 5px;
-  }
-
-  /* Add logo size adjustment for screens smaller than 400px */
-  logo{
-    display: none
   }
   
+}
+
+@media (max-width: 767.98px) {
+  .loading-screen .loading-content .logo-container {
+    margin: 0 auto;
+  }
 }

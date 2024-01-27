@@ -21,7 +21,7 @@ const Navbar = ({ loading }) => {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            className="w-6 h-6 text-gray-700"
+            className="w-6 h-6 text-gray-700 close-button"
           >
             {isMenuOpen ? (
               <path
@@ -130,7 +130,7 @@ const Navbar = ({ loading }) => {
         </div>
       )}
       <div className="flex items-center">
-        <NavLink to="/Cart" className="relative text-black rounded px-7 lg:mx-2 lg:my-0">
+        <NavLink to="/Cart" className="relative text-black rounded px-7 lg:md lg:my-0 cart-icon-container">
           <ShoppingCart size={24} />
           {totalItems > 0 && (
             <span className="absolute top-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">

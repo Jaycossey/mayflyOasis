@@ -56,14 +56,30 @@ nav {
   opacity: 80%;
 }
 
+.close-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 43px;
+  margin-left: 20px;
+}
+
+.cart-icon-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 13px;
+  margin-right: 20px;
+}
+
+.logo {
+  margin-right: -30px;
+}
+
+
 @media only screen and (max-width: 1200px) {
   nav{
    font-size: 10px;
-  }
-
-  /* Add logo size adjustment for screens smaller than 1200px */
-  logo{
-    display: none
   }
 }
 @media only screen and (max-width: 800px) {
@@ -76,12 +92,9 @@ nav {
 
 @media only screen and (max-width: 600px) {
   nav{
-    font-size: 10px;
+    font-size: 20px;
   }
 
-  logo {
-    size: 10px;
-  }
 
 }
 

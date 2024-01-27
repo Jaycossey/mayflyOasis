@@ -11,7 +11,7 @@ const Navbar = ({ loading }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return loading ? null : (
-    <nav className="fixed z-10 flex items-center justify-between w-full h-24 bg-white border-black border-3">
+    <nav className="fixed z-10 flex items-center justify-between w-full h-24 bg-white">
       <div className="flex items-center justify-center w-full lg:w-auto lg:justify-start">
         <button
           className="block -ms-3.5 lg:hidden"
@@ -76,7 +76,7 @@ const Navbar = ({ loading }) => {
       </div>
       {isMenuOpen && (
         <div className="fixed top-0 left-0 z-10 w-full h-screen bg-white">
-          <div className="flex items-center justify-center w-full h-24 border-b-2 border-black">
+          <div className="flex items-center justify-center w-full h-24 ">
             <button
               className="block -ms-3.5 lg:hidden"
               onClick={() => setIsMenuOpen(false)}

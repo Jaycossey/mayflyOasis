@@ -8,7 +8,7 @@ body {
   background-image: url("./assets/background/vectors/t15.svg");
   font-family: "catcheye2";
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 body::-webkit-scrollbar {

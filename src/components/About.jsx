@@ -1,9 +1,9 @@
 import ParaContainer from "./aboutSection/ParaContainer";
 import fetchText from "./utils/fetchText";
-import Team from "./aboutSection/Team";
 import teamArray from "./aboutSection/teamMemberArray";
 // Temp data until I can get the fetch working asyncrobously
 import aboutText from "./aboutSection/aboutText";
+import ProfileCard from "./ProfileCard";
 
 // About MayflyOasis
 const About = () => {
@@ -38,16 +38,13 @@ const About = () => {
                       flex-wrap 
                       items-center 
                       justify-center 
-                      gap-10">
+                      gap-10
+                      w-3/4
+                      m-auto">
 
         {teamArray.map((staff) => {
-          return <Team key={"team" + staff.name}
-                      name={staff.name} 
-                      job={staff.job} 
-                      quote={staff.quote} 
-                      image={staff.image} />
+          return <ProfileCard artist={staff} />
         })}
-
       </div>
       
     </div>

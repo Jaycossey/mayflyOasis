@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import Logo from '../assets/logos/mfo-logo-icon.svg'
-import Home from './Home'
-
+import Home from './Home';
 
 const LoadingScreen = () => {
   const [loading, setLoading] = useState(true);

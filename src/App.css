@@ -60,11 +60,6 @@ nav {
   nav{
    font-size: 10px;
   }
-
-  /* Add logo size adjustment for screens smaller than 1200px */
-  logo{
-    display: none
-  }
 }
 @media only screen and (max-width: 800px) {
   nav{
@@ -76,12 +71,9 @@ nav {
 
 @media only screen and (max-width: 600px) {
   nav{
-    font-size: 10px;
+    font-size: 20px;
   }
 
-  logo {
-    size: 10px;
-  }
 
 }
 

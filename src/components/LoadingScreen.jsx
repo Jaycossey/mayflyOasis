@@ -20,7 +20,7 @@ const LoadingScreen = () => {
       }`}
     >
       {loading && (
-        <div className='absolute inset-0 flex justify-center loading-content'>
+        <div className='absolute inset-0 flex items-center justify-center loading-content'>
           <div className='logo-container'>
             <img
               src={Logo}

@@ -1,7 +1,7 @@
 import ParaContainer from "./aboutSection/ParaContainer";
 // import fetchText from "./utils/fetchText";
 import teamArray from "./aboutSection/teamMemberArray";
-// Temp data until I can get the fetch working asyncrobously
+// Temp data until I can get the fetch working asyncronously
 import aboutText from "./aboutSection/aboutText";
 import ProfileCard from "./ProfileCard";
 
@@ -15,18 +15,7 @@ const About = () => {
   // console.log(welcome, mission, vision);
   return (
     // Container for about section -- updated to fixed position to allow for navbar separation
-    <div className="text-gray-800 
-                  text-sm
-                  md:p-8 
-                  lg:p-16 
-                  flex 
-                  flex-col
-                  w-screen 
-                  mt-16
-                  absolute
-                  p-10
-                  gap-10 
-                  overflow-auto">
+    <div className="absolute flex flex-col w-screen gap-10 p-10 mt-16 overflow-auto text-sm text-gray-800 md:p-8 lg:p-16">
 
       {/* Text containers, takes text values as props */}
       <ParaContainer text={about.welcome} />
@@ -34,13 +23,7 @@ const About = () => {
       <ParaContainer text={about.vision} />
 
       {/* DevTeam member section */}
-      <div className="flex 
-                      flex-wrap 
-                      items-center 
-                      justify-center 
-                      gap-10
-                      w-3/4
-                      m-auto">
+      <div className="flex flex-wrap items-center justify-center w-3/4 gap-10 m-auto">
 
         {teamArray.map((staff) => {
           return <ProfileCard artist={staff} />

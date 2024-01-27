@@ -11,7 +11,7 @@ const Navbar = ({ loading }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return loading ? null : (
-    <nav className="fixed z-10 flex items-center justify-between w-full h-24 bg-white border-2 border-black">
+    <nav className="fixed z-10 flex items-center justify-between w-full h-24 bg-white border-black border-3">
       <div className="flex items-center justify-center w-full lg:w-auto lg:justify-start">
         <button
           className="block -ms-3.5 lg:hidden"

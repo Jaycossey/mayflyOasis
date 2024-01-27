@@ -22,7 +22,7 @@ const Navbar = ({ loading }) => {
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            className="w-6 h-6 text-gray-800"
+            className="w-6 h-6 text-gray-700"
           >
             {isMenuOpen ? (
               <path
